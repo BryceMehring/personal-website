@@ -1,0 +1,9 @@
+# Site settings
+title: Bryce Mehring
+email: bm4g5@mst.edu
+baseurl: ""
+github_username:  f12dude
+
+# Build settings
+markdown: kramdown
+permalink: pretty
