@@ -3,6 +3,7 @@ title: Bryce Mehring
 email: bm4g5@mst.edu
 baseurl: ""
 github_username:  f12dude
+exclude: [README.md]
 
 # Build settings
 markdown: kramdown
