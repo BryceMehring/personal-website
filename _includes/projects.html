@@ -3,6 +3,9 @@
   <li>
     <a href="{{project.link}}">{{project.name}}</a>
     <p>Position: {{project.position}}</p>
+    {% if project.description %}
+    	<p>Description: {{project.description}}</p>
+	{% endif %}
     <br>
   </li>
 {% endfor %}
