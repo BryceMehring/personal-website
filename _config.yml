@@ -7,6 +7,4 @@ exclude: [README.md]
 
 # Build settings
 markdown: kramdown
-kramdown:
-  input: GFM
 permalink: pretty
