@@ -1,5 +1,6 @@
 # Site settings
 title: Bryce Mehring
+footer_title: <a href="http://arithmebit.com/">ArithmeBit</a> Developer
 email: brycemehring@gmail.com
 github_username: BryceMehring
 exclude: [README.md]
