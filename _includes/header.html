@@ -1,6 +1,8 @@
 <header class="site-header">
 
   <div class="wrap">
+  
+  	{% include githubRibbon.html %}
 
     <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
@@ -19,7 +21,7 @@
       <div class="trigger">
         {% assign sorted_pages = site.pages | sort:"order" %}
         {% for page in sorted_pages %}
-        	{% if page.order > 0 %}
+            {% if page.order > 0 %}
           		{% if page.title %}<a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>{% endif %}
             {% endif %}
         {% endfor %}
