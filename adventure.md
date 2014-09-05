@@ -17,14 +17,14 @@ layout: page
 * To change the resolution, edit the file `VideoModes.txt` and place `F` for fullscreen or `W` for windowed on the end of the line for the mode you want to use.
 
 ### Unit Movement:
-* Select units by left clicking on them or by the selection box.
-* Move units selected by right clicking on their destination. This destination is just a hint.
-* Pressing the delete key while having units selected will be destroyed.
+* Select units by left clicking on them individually or by dragging the mouse over many.
+* Move selected units by right clicking on their suggested destination.
+* Pressing the delete key will destroy selected units.
 
 ### Camera Movement:
 
-* The camera can zoom in and out by using the mouse scroll.
-* Arrow keys along with moving the mouse to the edge of the screen move the camera.
+* The camera can zoom in and out by using the mouse scroll wheel.
+* The camera can be moved by the cursor and by moving the mouse to the edge of the screen.
 
 ## System Requirements
 ***
