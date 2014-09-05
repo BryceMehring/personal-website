@@ -24,7 +24,7 @@ layout: page
 ### Camera Movement:
 
 * The camera can zoom in and out by using the mouse scroll wheel.
-* The camera can be moved by the cursor and by moving the mouse to the edge of the screen.
+* The camera can be moved by the arrow keys and by moving the mouse to the edge of the screen.
 
 ## System Requirements
 ***
