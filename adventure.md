@@ -14,6 +14,7 @@ layout: page
 * F1: toggle rendering of the quadtree
 * F5: toggle V-sync
 * F6: toggle FPS
+* To change the resolution, edit the file `VideoModes.txt` and place `F` for fullscreen or `W` for windowed on the end of the line for the mode you want to use.
 
 ### Unit Movement:
 * Select units by left clicking on them or by the selection box.
