@@ -5,7 +5,7 @@
     <p><b>Position</b>: {{project.position}}</p>
     
     {% if project.image %}
-	  <img class="pure-img" src="{{project.image}}" alt="some_text">
+	  <a href="{{project.image}}"><img class="pure-img" src="{{project.image}}" alt="{{project.image}}"></a>
     {% endif %}
     
     <br>
