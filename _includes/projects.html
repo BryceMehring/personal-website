@@ -3,9 +3,11 @@
   <li>
     <h3><a href="{{project.link}}">{{project.name}}</a></h3>
     <p><b>Position</b>: {{project.position}}</p>
-    {% if project.description %}
-    	<p><b>Description</b>: {{project.description}}</p>
+    
+    {% if project.image %}
+	  <img class="pure-img" src="{{project.image}}" alt="some_text">
     {% endif %}
+    
     <br>
   </li>
 {% endfor %}

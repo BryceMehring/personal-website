@@ -6,6 +6,10 @@ layout: page
 
 {% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/" %}
 
+## Description
+***
+This is my own personal project using my own game engine. The motivation behind this project was to get a lot of ships on the screen moving, being able to give orders to move the ships, and have the ships move intelligently while having knowledge of their surroundings. I ended up using a flocking algorithm that the ships abide by with an added in user component to control the behavior of the ships. All of the different components of the flocking behavior can be changed in game.
+
 ## Controls
 ***
 
