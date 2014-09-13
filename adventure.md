@@ -27,8 +27,11 @@ This is my own personal project using my own game engine. The motivation behind 
 
 ### Camera Movement:
 
+* The camera can be moved by:
+    * Arrow keys
+    * Moving the mouse to the edge of the screen
+    * Middle clicking while dragging the mouse
 * The camera can zoom in and out by using the mouse scroll wheel.
-* The camera can be moved by the arrow keys and by moving the mouse to the edge of the screen.
 
 ## System Requirements
 ***
