@@ -13,7 +13,7 @@ This is my own personal project using my own game engine. The motivation behind 
 ## Controls
 ***
 
-### Game management:
+### Game Management:
 * ESC: change the game state to the plugin loader. If in the plugin loader, ESC will exit the game.
 * F1: toggle rendering of the quadtree
 * F5: toggle V-sync
