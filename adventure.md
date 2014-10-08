@@ -4,7 +4,7 @@ permalink: /projects/adventure/
 layout: page
 ---
 
-{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/" %}
+{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/adventure/" %}
 
 ## Description
 ***
