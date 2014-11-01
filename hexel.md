@@ -1,0 +1,24 @@
+---
+title: Hexel (Pre-alpha)
+permalink: /projects/hexel/
+layout: page
+---
+
+{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/hexel/" %}
+
+## Description
+***
+
+The player is tasked with defending a key point from waves of enemies by placing various types of stationary towers onto the field. Hexel will include many types of enemies and towers, each with their own specific strengths and weaknesses. Towers can be purchased at any time as long as the player has the required money to pay for it. Money is earned by defeating enemies and at the end of each wave depending on how much money the player has on hand. The game is over when the player is reduced to 0 lives, and the player loses a life whenever an enemy reaches the key point.
+
+## Technologies Used
+***
+
+* [MOAI SDK](http://getmoai.com/)
+* [Flower](https://github.com/makotok/Hanappe)
+
+## System Requirements
+***
+
+* Windows: [Visual Studio 2013 Redistributable](http://www.microsoft.com/en-us/download/details.aspx?id=40784)
+* Linux: x64 support
