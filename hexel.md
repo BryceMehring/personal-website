@@ -5,6 +5,7 @@ layout: page
 ---
 
 {% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/hexel/" %}
+{% include button.html text="View Changelog" link="https://ci.brycemehring.me/job/Hexel/changes" %}
 
 ## Description
 ***
