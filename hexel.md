@@ -22,4 +22,4 @@ The player is tasked with defending a key point from waves of enemies by placing
 ***
 
 * Windows: [Visual Studio 2013 Redistributable x86](http://www.microsoft.com/en-us/download/details.aspx?id=40784)
-* Linux: x64 support
+* Mac OS X and Linux: x64 support
