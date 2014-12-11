@@ -4,8 +4,9 @@ permalink: /projects/hexel/
 layout: page
 ---
 
-{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/hexel/" %}
-{% include button.html text="View Changelog" link="https://ci.brycemehring.me/job/Hexel/changes" %}
+<iframe width="560" height="315" src="//www.youtube.com/embed/xwFNek4eq-w" frameborder="0" allowfullscreen></iframe>
+
+{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/hexel/" %} {% include button.html text="View Changelog" link="https://ci.brycemehring.me/job/Hexel/changes" %}
 
 ## Description
 ***
