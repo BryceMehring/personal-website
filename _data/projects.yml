@@ -1,14 +1,17 @@
 - name: Adventure
   link: adventure/
   position: Lead Developer
+  short_description: An interactive spaceship flocking simulation
   image: /images/Adventure.jpg
 
 - name: Spacewrights
   link: http://spacewrights.com/
   position: Developer
+  short_description: A tactical sci-fi 2D spaceship simulation game where you explore, build, and create a galactic empire
   image: http://spacewrights.com/wp-content/uploads/2014/05/space-combat.png
   
 - name: Hexel
   link: hexel/
   position: Lead Developer
+  short_description: Retro Tower Defense Game
   image: /images/Hexel.png

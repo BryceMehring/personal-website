@@ -8,11 +8,13 @@ order: 1
   <div class="pure-g project-grid">
     <div class="pure-u-1-2">
       <h3><a href="{{project.link}}">{{project.name}}</a></h3>
-      <p><b>Position</b>: {{project.position}}</p>
+        <p>{{project.short_description}}</p>
+        <p><b>Position</b>: {{project.position}}</p>
+      </p>
     </div>
     <div class="pure-u-1-2">
       {% if project.image %}
-      <a href="{{project.image}}"><img class="pure-img" src="{{project.image}}" alt="{{project.image}}"></a>
+        <a href="{{project.image}}"><img class="pure-img" src="{{project.image}}" alt="{{project.image}}"></a>
       {% endif %}
     </div>
   </div>
