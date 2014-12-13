@@ -1,7 +1,7 @@
 - name: Adventure
   link: adventure/
   position: Lead Developer
-  short_description: An interactive spaceship flocking simulation
+  short_description: An interactive spaceship flocking simulator
   image: /images/Adventure.jpg
 
 - name: Spacewrights
