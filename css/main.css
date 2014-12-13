@@ -1,7 +1,7 @@
 /* Base */
 /* ----------------------------------------------------------*/
 
-* {
+ul {
   margin: 0;
   padding: 0;
 }
@@ -127,10 +127,10 @@ a:visited { color: #205caa; }
 }
 
 .project-grid {
-    background: rgb(250, 250, 250);
+    background: rgb(246, 246, 246);
     padding: 15px;
+    margin-bottom: 50px;
 }
-
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
