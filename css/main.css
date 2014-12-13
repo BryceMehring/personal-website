@@ -132,6 +132,15 @@ a:visited { color: #205caa; }
     margin-bottom: 30px;
 }
 
+a.pure-button {
+  text-decoration:none;
+  margin:5px;
+}
+
+a.pure-button.pure-button-primary {
+  color:white;
+}
+
 /* Page Content styles */
 /* ----------------------------------------------------------*/
 
