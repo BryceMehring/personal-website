@@ -6,7 +6,7 @@ layout: page
 
 <iframe width="560" height="315" src="//www.youtube.com/embed/xwFNek4eq-w" frameborder="0" allowfullscreen></iframe>
 
-{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/hexel/" %} {% include button.html text="View Changelog" link="https://ci.brycemehring.me/job/Hexel/changes" %}
+{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/hexel/" %} {% include button.html text="View Changelog" link="https://ci.brycemehring.me/job/Hexel/changes" %} {% include button.html text="View Source" link="https://github.com/BryceMehring/hexel" %}
 
 ## Description
 ***
