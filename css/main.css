@@ -32,8 +32,8 @@ a:visited { color: #205caa; }
 .wrap:after { content:""; display:table; }
 .wrap:after { clear: both; }
 .wrap {
-  max-width: 800px;
-  padding: 0 30px;
+  max-width: 1000px;
+  padding: 0 110px;
   margin: 0 auto;
   zoom: 1;
 }
@@ -140,6 +140,7 @@ a.pure-button {
 a.pure-button.pure-button-primary {
   color:white;
 }
+
 
 /* Page Content styles */
 /* ----------------------------------------------------------*/
@@ -355,10 +356,13 @@ a.pure-button.pure-button-primary {
     float: none;
     clear: both;
   }
-
 }
 
 @media screen and (max-width: 600px) {
+
+  #ribbon {
+    display: none;
+  }
 
   .wrap { padding: 0 12px; }
 
