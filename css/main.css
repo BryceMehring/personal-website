@@ -358,7 +358,7 @@ a.pure-button.pure-button-primary {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 610px) {
 
   #ribbon {
     display: none;
