@@ -15,3 +15,15 @@
   position: Lead Developer
   short_description: Retro Tower Defense Game
   image: /images/Hexel.png
+  
+- name: MegaMinerAI 13 Droids
+  link: droids/
+  position: Lead Visualizer Developer
+  short_description: AI vs. AI
+  image: /images/Droids.png
+  
+- name: MegaMinerAI 12 Mars
+  link: mars/
+  position: Lead Visualizer Developer
+  short_description: AI vs. AI
+  image: /images/Mars.png
