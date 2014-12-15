@@ -6,7 +6,7 @@ layout: page
 
 <iframe width="420" height="315" src="//www.youtube.com/embed/ErwgfRSyGTA" frameborder="0" allowfullscreen></iframe>
 
-{% include button.html text="View Source" link="https://github.com/siggame/MegaMinerAI-13" %}
+{% include button.html text="View Source" link="https://github.com/siggame/MegaMinerAI-12" %}
 
 ## Objective
 ***
