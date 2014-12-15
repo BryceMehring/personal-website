@@ -22,7 +22,7 @@
 - name: MegaMinerAI 14-Plants
   link: plants/
   position: Lead Visualizer Developer
-  short_description: AI vs. AI
+  short_description: Branch out and dominate the enemy
   image: /images/Plants.png
   
 - name: MegaMinerAI 13-Droids
@@ -36,3 +36,9 @@
   position: Lead Visualizer Developer
   short_description: AI vs. AI
   image: /images/Mars.png
+  
+- name: MegaMinerAI 10-Galapagos
+  link: galapagos/
+  position: Visualizer Developer
+  short_description: Adapt, Compete, and Evolve to survive
+  image: /images/Galapagos.png
