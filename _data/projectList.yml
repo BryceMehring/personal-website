@@ -22,23 +22,23 @@
 - name: MegaMinerAI 14-Plants
   link: plants/
   position: Lead Visualizer Developer
-  short_description: Branch out and dominate the enemy
+  short_description: Branch out and dominate
   image: /images/Plants.png
   
 - name: MegaMinerAI 13-Droids
   link: droids/
   position: Lead Visualizer Developer
-  short_description: AI vs. AI
+  short_description: Disassemble and destroy
   image: /images/Droids.png
   
 - name: MegaMinerAI 12-Mars
   link: mars/
   position: Lead Visualizer Developer
-  short_description: AI vs. AI
+  short_description: The rivers run red
   image: /images/Mars.png
   
 - name: MegaMinerAI 10-Galapagos
   link: galapagos/
   position: Visualizer Developer
-  short_description: Adapt, Compete, and Evolve to survive
+  short_description: Adapt, compete, and evolve to survive
   image: /images/Galapagos.png
