@@ -16,13 +16,22 @@
   short_description: Retro Tower Defense Game
   image: /images/Hexel.png
   
-- name: MegaMinerAI 13 Droids
+- name: Projects in collaboration with <a href="http://blog.megaminerai.com/about_us/">SIG-Game</a>
+  break: true
+  
+- name: MegaMinerAI 14-Plants
+  link: plants/
+  position: Lead Visualizer Developer
+  short_description: AI vs. AI
+  image: /images/Plants.png
+  
+- name: MegaMinerAI 13-Droids
   link: droids/
   position: Lead Visualizer Developer
   short_description: AI vs. AI
   image: /images/Droids.png
   
-- name: MegaMinerAI 12 Mars
+- name: MegaMinerAI 12-Mars
   link: mars/
   position: Lead Visualizer Developer
   short_description: AI vs. AI
