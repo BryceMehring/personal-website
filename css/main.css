@@ -22,9 +22,8 @@ body {
 
 h1, h2, h3, h4, h5, h6 { font-weight: 400; }
 
-a         { color: #2a7ae2; text-decoration: none; }
+a         { color: #4183c4; text-decoration: none; }
 a:hover   { text-decoration: underline; }
-a:visited { color: #205caa; }
 
 /* Utility */
 
