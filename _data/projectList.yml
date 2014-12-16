@@ -13,7 +13,7 @@
 - name: Hexel
   link: hexel/
   position: Lead Developer
-  short_description: Retro Tower Defense Game
+  short_description: A retro tower defense game
   image: /images/Hexel.png
   
 - name: Projects in collaboration with <a href="http://blog.megaminerai.com/about_us/">SIG-Game</a>
@@ -36,6 +36,12 @@
   position: Lead Visualizer Developer
   short_description: The rivers run red
   image: /images/Mars.png
+  
+- name: MegaMinerAI 11-Reef
+  link: reef/
+  position: Lead Visualizer Developer
+  short_description: It's all about garbage collection
+  image: /images/Reef.png
   
 - name: MegaMinerAI 10-Galapagos
   link: galapagos/
