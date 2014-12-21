@@ -8,3 +8,6 @@ exclude: [README.md]
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+sass:
+    style: :compressed
