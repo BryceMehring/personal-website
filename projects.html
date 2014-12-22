@@ -17,7 +17,7 @@ order: 1
         </div>
         <div class="pure-u-1 pure-u-md-1-2">
           {% if project.image %}
-            <a href="{{project.image}}"><img class="pure-img" src="{{project.image}}" alt="{{project.image}}"></a>
+            {% include clickableImage.html image=project.image %}
           {% endif %}
         </div>
       </div>
