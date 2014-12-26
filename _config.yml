@@ -1,9 +1,13 @@
 # Site settings
 title: Bryce Mehring
+description: I'm Bryce Mehring and I love developing video games that create meaningful experiences.
 footer_title: <a href="http://arithmebit.com/">ArithmeBit</a> Developer
 email: brycemehring@gmail.com
 github_username: BryceMehring
 exclude: [README.md]
+
+# Google Analytics
+google_analytics_id: UA-52920015-1
 
 # Build settings
 markdown: kramdown
