@@ -4,7 +4,7 @@ permalink: /projects/mars/
 layout: page
 ---
 
-<iframe width="420" height="315" src="//www.youtube.com/embed/ErwgfRSyGTA" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/ErwgfRSyGTA" frameborder="0" allowfullscreen></iframe>
 
 {% include button.html text="View Source" link="https://github.com/siggame/MegaMinerAI-12" %}
 
