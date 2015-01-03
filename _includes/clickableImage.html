@@ -1,3 +1,8 @@
-<a href="{{include.image}}">
+{% if include.link %}
+	{% assign image-link = include.link %}
+{% else %}
+	{% assign image-link = include.image %}
+{% endif %}
+<a href="{{image-link}}">
 	<img class="pure-img" src="{{include.image}}" alt="{{include.image}}">
 </a>
