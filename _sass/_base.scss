@@ -16,7 +16,7 @@ html, button, input, select, textarea,
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
-  font-weight: 300;
+  font-weight: normal;
 }
 
 body {
@@ -82,7 +82,7 @@ li {
  * Headings
  */
 h1, h2, h3, h4, h5, h6 {
-    font-weight: 300;
+    font-weight: normal;
 }
 
 
