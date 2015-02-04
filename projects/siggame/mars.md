@@ -9,7 +9,6 @@ layout: page
 {% include button.html text="View Source" link="https://github.com/siggame/MegaMinerAI-12" %}
 
 ## Objective
-***
 
 * Connect water flowing from ice caps to pump stations
 * Teams score a point for every unit of water their pump stations collect

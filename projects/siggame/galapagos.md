@@ -9,7 +9,6 @@ layout: page
 {% include button.html text="View Source" link="https://github.com/siggame/MegaMinerAI-10" %}
 
 ## Objective
-***
 
 * Force the enemy into extinction to win, or have more creatures when the game ends
 * Move them around, eat, and breed to succeed

@@ -219,6 +219,7 @@
 
     h2 {
         font-size: 32px;
+        border-bottom: 1px solid #ddd;
 
         @include media-query($on-laptop) {
             font-size: 28px;
@@ -240,4 +241,8 @@
             font-size: 18px;
         }
     }
+
+
 }
+
+

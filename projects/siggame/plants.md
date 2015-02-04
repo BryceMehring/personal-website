@@ -9,7 +9,6 @@ layout: page
 {% include button.html text="View Source" link="https://github.com/siggame/MegaMinerAI-14" %}
 
 ## Objective
-***
 
 * Kill the Mother Plant
 

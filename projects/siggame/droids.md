@@ -9,7 +9,6 @@ layout: page
 {% include button.html text="View Source" link="https://github.com/siggame/MegaMinerAI-13" %}
 
 ## Objective
-***
 
 * Defend your hangar and destroy the enemy’s hangar
 * Teams score a point for every section of the enemy hangar destroyed
