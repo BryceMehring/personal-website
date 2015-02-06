@@ -214,8 +214,13 @@
     }
 }
 
+
 .post-content {
     margin-bottom: $spacing-unit;
+
+    .no-border {
+        border-bottom: none;
+    }
 
     h2 {
         font-size: 32px;
@@ -241,8 +246,4 @@
             font-size: 18px;
         }
     }
-
-
 }
-
-
