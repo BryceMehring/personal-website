@@ -159,10 +159,10 @@ pre {
 }
 
 /**
- * Grid formatting
+ * Box formatting
  */
  
-.project-grid {
+.project-box {
     @extend pre, code;
     
     background: $project-grid-color;

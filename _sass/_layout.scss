@@ -170,6 +170,11 @@
 .page-content {
     padding: $spacing-unit 0;
     background-color: $page-content-color;
+
+    ul.project-group {
+        list-style-type: none;
+        margin: 0;
+    }
 }
 
 .page-heading {
