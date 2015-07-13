@@ -15,6 +15,11 @@
   position: Lead Developer
   short_description: A retro tower defense game
   image: /images/Hexel.png
+
+- name: Pathfinder
+  link: pathfinder/
+  position: Lead Developer
+  short_description: Testing a JS pathfinder
   
 - name: Projects in collaboration with <a href="http://blog.megaminerai.com/">SIG-Game</a>
   break: true
@@ -42,7 +47,7 @@
   position: Lead Visualizer Developer
   short_description: It's all about garbage collection
   image: /images/Reef.png
-  
+
 - name: MegaMinerAI 10-Galapagos
   link: galapagos/
   position: Visualizer Developer
