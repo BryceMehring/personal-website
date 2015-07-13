@@ -108,13 +108,15 @@ canvas.addEventListener('mousemove', onMouseMove);
 canvas.addEventListener('mouseup', onMouseUpDown);
 canvas.addEventListener('mousedown', onMouseUpDown);
 
-window.setInterval(function() {
+function updateIndex(sprite) {
 	let index = sprite.index;
 	if(index >= 15) {
 		index = 11;
 	}
 	sprite.setIndex(index + 1);
-}, 500);
+}
+
+window.setInterval(updateIndex, 500, sprite);
+window.setInterval(updateIndex, 1000, newSprite);
 
 render();
-
