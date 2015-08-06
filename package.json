@@ -1,0 +1,9 @@
+{
+  "name": "bryce-mehring",
+  "version": "1.0.0",
+  "description": "Personal Website",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-jshint": "^1.11.2"
+  }
+}
