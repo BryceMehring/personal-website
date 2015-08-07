@@ -24,7 +24,7 @@ MaterialManager.addTexture({
 
 let sprite = new Sprite({
 	texture: '/images/ships.png',
-	index: 14
+	index: 11
 });
 
 sprite.selectable = true;
@@ -53,11 +53,11 @@ function render () {
 }
 
 function updateIndex(sprite) {
-	let index = sprite.index;
-	if(index >= 15) {
+	let index = sprite.index + 1;
+	if(index > 15) {
 		index = 11;
 	}
-	sprite.setIndex(index + 1);
+	sprite.setIndex(index);
 }
 
 window.setInterval(updateIndex, 2000, sprite);
