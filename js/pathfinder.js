@@ -22,10 +22,7 @@ MaterialManager.addTexture({
 	tilesVerticle: 4
 });
 
-let sprite = new Sprite({
-	texture: '/images/ships.png',
-	index: 11
-});
+let sprite = new Sprite('/images/ships.png', 11);
 
 sprite.selectable = true;
 scene.add( sprite );
