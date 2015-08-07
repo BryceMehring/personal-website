@@ -3,8 +3,9 @@ import {Sprite} from '/js/sprite.js';
 import {Input} from '/js/input.js';
 import {MaterialManager} from '/js/materialManager.js';
 
-let gameElement = document.getElementById('game');
-let WIDTH = gameElement.offsetWidth,
+let gameElement = document.getElementById('game'),
+	cameraSliderElement = document.getElementById('cameraSlider'),
+	WIDTH = gameElement.offsetWidth,
 	HEIGHT = 800;
 
 let scene = new THREE.Scene();
@@ -29,9 +30,9 @@ scene.add( sprite );
 
 let spriteList = [];
 for(let i = 0; i < 150; ++i) {
-	let rad = i * 1.5 * (Math.PI / 180);
+	let rad = i * 0.18 * (Math.PI / 180);
 	let newSprite = sprite.clone();
-	newSprite.position.set(6*Math.cos(rad - i), 6*Math.sin(rad + i), 1);
+	newSprite.position.set(8*Math.cos(rad - i), 8*Math.sin(rad + i), 1);
 	scene.add(newSprite);
 
 	spriteList.push(newSprite);
@@ -41,6 +42,10 @@ camera.position.z = 8;
 
 Input.setCanvas(canvas);
 Input.setCamera(camera);
+
+cameraSliderElement.addEventListener('input', function() {
+	camera.position.z = this.value;
+});
 
 function render () {
 	requestAnimationFrame( render );
