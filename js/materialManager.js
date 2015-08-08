@@ -9,7 +9,7 @@ export class MaterialManager {
 		for(let i = 0; i < params.tilesVerticle; ++i) {
 			for(let j = 0; j < params.tilesHorizontal; ++j) {
 				let index = i * params.tilesHorizontal + j;
-				let material = new THREE.SpriteMaterial( { map: THREE.ImageUtils.loadTexture(params.texture)} );
+				let material = new THREE.MeshBasicMaterial( { map: THREE.ImageUtils.loadTexture(params.texture), transparent: true, alphaTest: 0.01} );
 				material.map.wrapS = material.map.wrapT = THREE.RepeatWrapping;
 				material.map.repeat.set(1 / params.tilesHorizontal, 1 / params.tilesVerticle);
 				material.map.offset.set(j / params.tilesHorizontal, i / params.tilesVerticle);
