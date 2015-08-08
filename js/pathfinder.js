@@ -7,6 +7,12 @@ function getRandomArbitrary(min, max) {
   return Math.random() * (max - min) + min;
 }
 
+// Returns a random integer between min (included) and max (excluded)
+// Using Math.round() will give you a non-uniform distribution!
+function getRandomInt(min, max) {
+  return Math.floor(Math.random() * (max - min)) + min;
+}
+
 function getRandomAngle() {
 	return getRandomArbitrary(0, 360) * Math.PI / 180;
 }
@@ -32,6 +38,7 @@ MaterialManager.addTexture({
 });
 
 let sprite = new Sprite('/images/ships.png', 11);
+sprite.position.z = 5;
 
 sprite.selectable = true;
 scene.add( sprite );
@@ -67,7 +74,16 @@ function updateIndex(sprite) {
 	sprite.setIndex(index);
 }
 
+function updateColor(sprite) {
+	let randomVertex = getRandomInt(0, sprite.geometry.bufferLength);
+	sprite.geometry.setVertexColor(randomVertex, {
+		r: Math.random(),
+		g: Math.random(),
+		b: Math.random()
+	});
+}
 
+window.setInterval(updateColor, 2000, sprite);
 window.setInterval(updateIndex, 2000, sprite);
 for (let i = spriteList.length - 1; i >= 0; i--) {
 	window.setInterval(updateIndex, 500 + i, spriteList[i]);

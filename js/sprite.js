@@ -1,8 +1,9 @@
 import {MaterialManager} from '/js/materialManager.js';
+import {ColorPlane} from '/js/colorPlane.js';
 
 export class Sprite extends THREE.Mesh {
 	constructor(texture, index = 0) {
-		super(Sprite.geometry, MaterialManager.getMaterial(texture, index));
+		super(new ColorPlane(1, 1), MaterialManager.getMaterial(texture, index));
 
 		this.texture = texture;
 		this.index = index;
@@ -25,4 +26,3 @@ export class Sprite extends THREE.Mesh {
 		return super.clone(object, ...params);
 	}
 }
-Sprite.geometry = new THREE.BoxGeometry( 1, 1, 0, 1, 1, 0 );
