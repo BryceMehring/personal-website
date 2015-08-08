@@ -49,6 +49,7 @@ for(let i = 0; i < 150; ++i) {
 	let newSprite = sprite.clone();
 	newSprite.position.set(8*Math.cos(rad - i), 8*Math.sin(rad + i), 1);
 	newSprite.rotation.z = getRandomAngle();
+	newSprite.setIndex(getRandomInt(11, 16));
 	scene.add(newSprite);
 
 	spriteList.push(newSprite);
@@ -85,7 +86,4 @@ function updateColor(sprite) {
 
 window.setInterval(updateColor, 2000, sprite);
 window.setInterval(updateIndex, 2000, sprite);
-for (let i = spriteList.length - 1; i >= 0; i--) {
-	window.setInterval(updateIndex, 500 + i, spriteList[i]);
-}
 render();
