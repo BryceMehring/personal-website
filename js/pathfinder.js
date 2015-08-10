@@ -37,11 +37,34 @@ MaterialManager.addTexture({
 	tilesVerticle: 4
 });
 
+MaterialManager.addTexture({
+  texture: '/images/space-station.png',
+  tilesHorizontal: 2,
+  tilesVerticle: 2
+});
+
 let sprite = new Sprite('/images/ships.png', 11);
-sprite.position.z = 5;
+sprite.position.set(2, 2, 5);
 
 sprite.selectable = true;
 scene.add( sprite );
+
+let spaceStationGroup = new THREE.Object3D();
+scene.add(spaceStationGroup);
+
+for(let i = 0; i < 4; ++i) {
+  let spaceStation = new Sprite('/images/space-station.png', getRandomInt(1, 4));
+  let scale = getRandomArbitrary(2, 3);
+  spaceStation.position.set(getRandomArbitrary(-4, 4), getRandomArbitrary(-4, 4), getRandomArbitrary(2, 4));
+  spaceStation.scale.set(scale, scale, 1);
+  spaceStation.rotation.z = getRandomAngle();
+  spaceStation.userData = {
+    rotationSpeed: getRandomArbitrary(-0.004, -0.01)
+  }
+  spaceStationGroup.add(spaceStation);
+}
+
+spaceStationGroup.children[0].position.set(0, 0, 5);
 
 let spriteList = [];
 for(let i = 0; i < 150; ++i) {
@@ -49,6 +72,7 @@ for(let i = 0; i < 150; ++i) {
 	let newSprite = sprite.clone();
 	newSprite.position.set(8*Math.cos(rad - i), 8*Math.sin(rad + i), 1);
 	newSprite.rotation.z = getRandomAngle();
+  newSprite.setIndex(getRandomInt(11, 16));
 	scene.add(newSprite);
 
 	spriteList.push(newSprite);
@@ -61,15 +85,19 @@ cameraSliderElement.addEventListener('input', function() {
 });
 
 function render () {
-	requestAnimationFrame( render );	
+	requestAnimationFrame( render );
 	cameraSliderElement.value = camera.position.z;
+  spaceStationGroup.rotation.z += 0.001;
+  spaceStationGroup.children.forEach(function(station) {
+    station.rotation.z += station.userData.rotationSpeed;
+  });
 	renderer.render( scene, camera );
 }
 
-function updateIndex(sprite) {
+function updateIndex(sprite, min, max) {
 	let index = sprite.index + 1;
-	if(index > 15) {
-		index = 11;
+	if(index > max) {
+		index = min;
 	}
 	sprite.setIndex(index);
 }
@@ -83,9 +111,9 @@ function updateColor(sprite) {
 	});
 }
 
+spaceStationGroup.children.forEach(function(station) {
+  window.setInterval(updateIndex, 2000, station, 1, 3);
+});
 window.setInterval(updateColor, 2000, sprite);
-window.setInterval(updateIndex, 2000, sprite);
-for (let i = spriteList.length - 1; i >= 0; i--) {
-	window.setInterval(updateIndex, 500 + i, spriteList[i]);
-}
+
 render();
