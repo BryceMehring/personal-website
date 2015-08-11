@@ -2,28 +2,18 @@
 import {Sprite} from '/js/sprite.js';
 import {MaterialManager} from '/js/materialManager.js';
 
-// Returns a random number between min (inclusive) and max (exclusive)
-function getRandomArbitrary(min, max) {
-  return Math.random() * (max - min) + min;
-}
-
-// Returns a random integer between min (included) and max (excluded)
-// Using Math.round() will give you a non-uniform distribution!
-function getRandomInt(min, max) {
-  return Math.floor(Math.random() * (max - min)) + min;
-}
-
 function getRandomAngle() {
-	return getRandomArbitrary(0, 360) * Math.PI / 180;
+    return THREE.Math.randFloat(0, 2*Math.PI);
 }
 
 let gameElement = document.getElementById('game'),
 	cameraSliderElement = document.getElementById('cameraSlider'),
-	WIDTH = gameElement.offsetWidth,
-	HEIGHT = 800;
+	WIDTH = window.innerWidth,
+	HEIGHT = window.innerHeight;
 
 let scene = new THREE.Scene();
 let camera = new THREE.PerspectiveCamera( 90, WIDTH/HEIGHT, 0.1, 1000 );
+camera.position.z = 8;
 
 let renderer = new THREE.WebGLRenderer();
 let canvas = renderer.domElement;
@@ -44,7 +34,7 @@ MaterialManager.addTexture({
   tilesVerticle: 2
 });
 
-var directionalLight = new THREE.DirectionalLight( 0xbbffff, 0.4 );
+let directionalLight = new THREE.DirectionalLight( 0xbbffff, 0.4 );
 directionalLight.position.set( 1, 1, 2 );
 scene.add( directionalLight );
 
@@ -58,13 +48,13 @@ let spaceStationGroup = new THREE.Object3D();
 scene.add(spaceStationGroup);
 
 for(let i = 0; i < 4; ++i) {
-  let spaceStation = new Sprite('/images/space-station.png', getRandomInt(1, 4));
-  let scale = getRandomArbitrary(2, 3);
-  spaceStation.position.set(getRandomArbitrary(-4, 4), getRandomArbitrary(-4, 4), getRandomArbitrary(2, 4));
+  let spaceStation = new Sprite('/images/space-station.png', THREE.Math.randInt(1, 4));
+  let scale = THREE.Math.randFloat(2, 3);
+  spaceStation.position.set(THREE.Math.randFloat(-4, 4), THREE.Math.randFloat(-4, 4), THREE.Math.randFloat(2, 4));
   spaceStation.scale.set(scale, scale, 1);
   spaceStation.rotation.z = getRandomAngle();
   spaceStation.userData = {
-    rotationSpeed: getRandomArbitrary(-0.004, -0.01)
+    rotationSpeed: THREE.Math.randFloat(-0.004, -0.01)
   };
   spaceStationGroup.add(spaceStation);
 }
@@ -77,17 +67,11 @@ for(let i = 0; i < 150; ++i) {
 	let newSprite = sprite.clone();
 	newSprite.position.set(8*Math.cos(rad - i), 8*Math.sin(rad + i), 1);
 	newSprite.rotation.z = getRandomAngle();
-	newSprite.setIndex(getRandomInt(11, 16));
+	newSprite.setIndex(THREE.Math.randInt(11, 16));
 	scene.add(newSprite);
 
 	spriteList.push(newSprite);
 }
-
-camera.position.z = 8;
-
-cameraSliderElement.addEventListener('input', function() {
-	camera.position.z = this.value;
-});
 
 function render () {
 	requestAnimationFrame( render );
@@ -108,13 +92,25 @@ function updateIndex(sprite, min, max) {
 }
 
 function updateColor(sprite) {
-	let randomVertex = getRandomInt(0, sprite.geometry.bufferLength);
+	let randomVertex = THREE.Math.randInt(0, sprite.geometry.bufferLength);
 	sprite.geometry.setVertexColor(randomVertex, {
 		r: Math.random(),
 		g: Math.random(),
 		b: Math.random()
 	});
 }
+
+function onWindowResize() {
+	camera.aspect = window.innerWidth / window.innerHeight;
+	camera.updateProjectionMatrix();
+	renderer.setSize( window.innerWidth, window.innerHeight );
+}
+
+cameraSliderElement.addEventListener('input', function() {
+	camera.position.z = this.value;
+});
+
+window.addEventListener( 'resize', onWindowResize, false );
 
 spaceStationGroup.children.forEach(function(station) {
   window.setInterval(updateIndex, 2000, station, 1, 3);
