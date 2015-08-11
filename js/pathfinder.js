@@ -39,9 +39,14 @@ MaterialManager.addTexture({
 
 MaterialManager.addTexture({
   texture: '/images/space-station.png',
+  normal: '/images/space-station-normal.png',
   tilesHorizontal: 2,
   tilesVerticle: 2
 });
+
+var directionalLight = new THREE.DirectionalLight( 0xbbffff, 0.4 );
+directionalLight.position.set( 1, 1, 2 );
+scene.add( directionalLight );
 
 let sprite = new Sprite('/images/ships.png', 11);
 sprite.position.set(2, 2, 5);
@@ -60,7 +65,7 @@ for(let i = 0; i < 4; ++i) {
   spaceStation.rotation.z = getRandomAngle();
   spaceStation.userData = {
     rotationSpeed: getRandomArbitrary(-0.004, -0.01)
-  }
+  };
   spaceStationGroup.add(spaceStation);
 }
 
