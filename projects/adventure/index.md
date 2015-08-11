@@ -1,6 +1,5 @@
 ---
 title: Adventure - A Space Adventure
-permalink: /projects/adventure/
 layout: page
 ---
 

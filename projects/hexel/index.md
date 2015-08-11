@@ -1,6 +1,5 @@
 ---
 title: Hexel (Pre-alpha)
-permalink: /projects/hexel/
 layout: page
 ---
 
