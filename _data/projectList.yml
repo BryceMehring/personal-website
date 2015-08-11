@@ -9,39 +9,34 @@
   position: Developer
   short_description: A tactical sci-fi 2D spaceship simulation game where you explore, build, and create a galactic empire
   image: http://spacewrights.com/wp-content/uploads/2014/05/space-combat.png
-  
+
 - name: Hexel
   link: hexel/
   position: Lead Developer
   short_description: A retro tower defense game
   image: /images/Hexel.png
 
-- name: Pathfinder
-  link: pathfinder/
-  position: Lead Developer
-  short_description: Testing a JS pathfinder
-  
 - name: Projects in collaboration with <a href="http://blog.megaminerai.com/">SIG-Game</a>
   break: true
-  
+
 - name: MegaMinerAI 14-Plants
   link: plants/
   position: Lead Visualizer Developer
   short_description: Branch out and dominate
   image: /images/Plants.png
-  
+
 - name: MegaMinerAI 13-Droids
   link: droids/
   position: Lead Visualizer Developer
   short_description: Disassemble and destroy
   image: /images/Droids.png
-  
+
 - name: MegaMinerAI 12-Mars
   link: mars/
   position: Lead Visualizer Developer
   short_description: The rivers run red
   image: /images/Mars.png
-  
+
 - name: MegaMinerAI 11-Reef
   link: reef/
   position: Lead Visualizer Developer

@@ -120,5 +120,4 @@ spaceStationGroup.children.forEach(function(station) {
   window.setInterval(updateIndex, 2000, station, 1, 3);
 });
 window.setInterval(updateColor, 2000, sprite);
-window.setInterval(updateIndex, 2000, sprite);
 render();
