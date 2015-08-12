@@ -7,7 +7,6 @@ function getRandomAngle() {
 }
 
 let gameElement = document.getElementById('game'),
-	cameraSliderElement = document.getElementById('cameraSlider'),
 	WIDTH = window.innerWidth,
 	HEIGHT = window.innerHeight;
 
@@ -75,7 +74,6 @@ for(let i = 0; i < 150; ++i) {
 
 function render () {
 	requestAnimationFrame( render );
-	cameraSliderElement.value = camera.position.z;
   spaceStationGroup.rotation.z += 0.001;
   spaceStationGroup.children.forEach(function(station) {
     station.rotation.z += station.userData.rotationSpeed;
@@ -106,10 +104,12 @@ function onWindowResize() {
 	renderer.setSize( window.innerWidth, window.innerHeight );
 }
 
-cameraSliderElement.addEventListener('input', function() {
-	camera.position.z = this.value;
-});
+function onWheelEvent(event) {
+  let deltaY = event.deltaY > 0 ? -1 : 1;
+  camera.position.z += deltaY;
+}
 
+gameElement.addEventListener('wheel', onWheelEvent, false);
 window.addEventListener( 'resize', onWindowResize, false );
 
 spaceStationGroup.children.forEach(function(station) {

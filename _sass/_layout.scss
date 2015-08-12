@@ -253,16 +253,6 @@
     }
 }
 
-#game {
-    position: absolute;
-    left: 0px;
-    right: 0px;
-    top: 0px;
-    bottom: 0px;
-    overflow: hidden;
-    z-index: 10;
-}
-
 #info {
     text-align: center;
     padding: 10px;
@@ -272,11 +262,12 @@
     color: #fff;
 }
 
-input[type="range"].vertical-slider {
+#game {
     position: absolute;
-    margin-left: 1em;
-    transform: rotate(90deg);
-    -moz-transform-origin: 0;
-    -o-transform-origin: 0;
-    -webkit-transform-origin: 0;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    overflow: hidden;
+    z-index: 10;
 }
