@@ -105,7 +105,7 @@ function onWindowResize() {
 }
 
 function onWheelEvent(event) {
-  let deltaY = event.deltaY > 0 ? -1 : 1;
+  let deltaY = event.deltaY > 0 ? 1 : -1;
   camera.position.z += deltaY;
 }
 
