@@ -3,10 +3,16 @@ export class MaterialManager {
 		key: unique value which identifies the texture + material
 		texture: texture name,
 		normal: normal map texture (optional),
-		tilesHorizontal: number tiles horizontal,
-		tilesVerticle: number tiles vertile,
+		tilesHorizontal: number tiles horizontal (optional),
+		tilesVerticle: number tiles vertile (optional),
+		specular: Specular color of the material, i.e., how shiny the material is and the color of its shine. (optional),
+		shininess: How shiny the specular highlight is; a higher value gives a sharper highlight. (optional),
+		color: Diffuse color of the material. (optional)
 	}*/
 	static addTexture(params) {
+		params.tilesHorizontal = params.tilesHorizontal || 1;
+		params.tilesVerticle = params.tilesVerticle || 1;
+
 		let repeatHorizontal = 1 / params.tilesHorizontal,
 			repeatVertical = 1 / params.tilesVerticle;
 
