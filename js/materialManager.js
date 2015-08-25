@@ -1,5 +1,6 @@
 export class MaterialManager {
 	/* params = {
+		key: unique value which identifies the texture + material
 		texture: texture name,
 		normal: normal map texture (optional),
 		tilesHorizontal: number tiles horizontal,
@@ -9,7 +10,7 @@ export class MaterialManager {
 		let repeatHorizontal = 1 / params.tilesHorizontal,
 			repeatVertical = 1 / params.tilesVerticle;
 
-		MaterialManager.cache[params.texture] = [];
+		MaterialManager.cache[params.key] = [];
 		for(let i = 0; i < params.tilesVerticle; ++i) {
 			for(let j = 0; j < params.tilesHorizontal; ++j) {
 
@@ -31,9 +32,9 @@ export class MaterialManager {
 					normalMap: textures.normalMap || null,
 					transparent: true,
 					alphaTest: 0.01,
-					specular: 0x55555555, // TODO: move these configs variables out of here
-					shininess: 40,
-					color: 0xffffffff,
+					specular: params.specular || null,
+					shininess: params.shininess || null,
+					color: params.color || 0xffffffff,
 					vertexColors: THREE.VertexColors
 				});
 
@@ -44,13 +45,13 @@ export class MaterialManager {
 					texture.offset.set(offsetX, offsetY);
 				}
 
-				MaterialManager.cache[params.texture][index] = material;
+				MaterialManager.cache[params.key][index] = material;
 			}
 		}
 	}
 
-	static getMaterial(texture, index) {
-		return MaterialManager.cache[texture][index];
+	static getMaterial(key, index) {
+		return MaterialManager.cache[key][index];
 	}
 }
 MaterialManager.cache = {};

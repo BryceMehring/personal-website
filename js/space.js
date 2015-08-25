@@ -21,23 +21,27 @@ renderer.setSize( WIDTH, HEIGHT );
 gameElement.appendChild(canvas);
 
 MaterialManager.addTexture({
+    key: 'ship',
 	texture: '/images/ships.png',
 	tilesHorizontal: 4,
 	tilesVerticle: 4
 });
 
 MaterialManager.addTexture({
+  key: 'space-station',
   texture: '/images/space-station.png',
   normal: '/images/space-station-normal.png',
   tilesHorizontal: 2,
-  tilesVerticle: 2
+  tilesVerticle: 2,
+  specular: 0x55555555,
+  shininess: 40
 });
 
 let directionalLight = new THREE.DirectionalLight( 0xbbffff, 0.4 );
 directionalLight.position.set( 1, 1, 2 );
 scene.add( directionalLight );
 
-let sprite = new Sprite('/images/ships.png', 11);
+let sprite = new Sprite('ship', 11);
 sprite.position.set(2, 2, 5);
 
 sprite.selectable = true;
@@ -47,7 +51,7 @@ let spaceStationGroup = new THREE.Object3D();
 scene.add(spaceStationGroup);
 
 for(let i = 0; i < 4; ++i) {
-  let spaceStation = new Sprite('/images/space-station.png', THREE.Math.randInt(1, 4));
+  let spaceStation = new Sprite('space-station', THREE.Math.randInt(1, 4));
   let scale = THREE.Math.randFloat(2, 3);
   spaceStation.position.set(THREE.Math.randFloat(-4, 4), THREE.Math.randFloat(-4, 4), THREE.Math.randFloat(2, 4));
   spaceStation.scale.set(scale, scale, 1);
