@@ -1,6 +1,7 @@
 // TODO: clean this up
 import {Sprite} from '/js/sprite.js';
 import {MaterialManager} from '/js/materialManager.js';
+import {Ship} from '/js/ship.js';
 
 function getRandomAngle() {
     return THREE.Math.randFloat(0, 2*Math.PI);
@@ -41,12 +42,6 @@ let directionalLight = new THREE.DirectionalLight( 0xbbffff, 0.4 );
 directionalLight.position.set( 1, 1, 2 );
 scene.add( directionalLight );
 
-let sprite = new Sprite('ship', 11);
-sprite.position.set(2, 2, 5);
-
-sprite.selectable = true;
-scene.add( sprite );
-
 let spaceStationGroup = new THREE.Object3D();
 scene.add(spaceStationGroup);
 
@@ -64,16 +59,11 @@ for(let i = 0; i < 4; ++i) {
 
 spaceStationGroup.children[0].position.set(0, 0, 5);
 
-let spriteList = [];
+let shipList = [];
 for(let i = 0; i < 150; ++i) {
-	let rad = i * 0.18 * (Math.PI / 180);
-	let newSprite = sprite.clone();
-	newSprite.position.set(8*Math.cos(rad - i), 8*Math.sin(rad + i), 1);
-	newSprite.rotation.z = getRandomAngle();
-	newSprite.setIndex(THREE.Math.randInt(11, 16));
-	scene.add(newSprite);
-
-	spriteList.push(newSprite);
+	let ship = new Ship();
+	scene.add(ship);
+	shipList.push(ship);
 }
 
 function render () {
@@ -82,7 +72,12 @@ function render () {
   spaceStationGroup.children.forEach(function(station) {
     station.rotation.z += station.userData.rotationSpeed;
   });
-	renderer.render( scene, camera );
+
+  shipList.forEach(function(ship) {
+    ship.update();
+  });
+
+  renderer.render( scene, camera );
 }
 
 function updateIndex(sprite, min, max) {
@@ -119,5 +114,4 @@ window.addEventListener( 'resize', onWindowResize, false );
 spaceStationGroup.children.forEach(function(station) {
   window.setInterval(updateIndex, 2000, station, 1, 3);
 });
-window.setInterval(updateColor, 2000, sprite);
 render();
