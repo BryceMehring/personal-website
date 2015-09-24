@@ -4,7 +4,9 @@ description: I'm Bryce Mehring and I love developing video games that create mea
 footer_title: <a href="http://arithmebit.com/">ArithmeBit</a> Developer
 email: brycemehring@gmail.com
 github_username: BryceMehring
-exclude: [README.md, CNAME, node_modules, gulpfile.js, package.json]
+exclude: [README.md, CNAME, node_modules, gulpfile.js, package.json, Gemfile]
+
+url: //www.brycemehring.me
 
 # Google Analytics
 google_analytics_id: UA-52920015-1
@@ -12,6 +14,9 @@ google_analytics_id: UA-52920015-1
 # Build settings
 markdown: kramdown
 permalink: pretty
+
+gems:
+  - jekyll-sitemap
 
 sass:
     style: :compressed
