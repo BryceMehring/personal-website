@@ -6,7 +6,7 @@ layout: page
 <div class="pure-u-1 pure-u-md-1-2">
 	{% include clickableImage.html image="/images/Adventure.jpg" %}
 </div>
-{% include button.html text="Download as zip" link="http://ci.brycemehring.me/downloads/adventure/" %} {% include button.html text="View Source" link="https://github.com/BryceMehring/adventure" %}
+{% include button.html text="Download" link="https://github.com/BryceMehring/adventure/releases" %} {% include button.html text="View Source" link="https://github.com/BryceMehring/adventure" %}
 
 
 ## Description
