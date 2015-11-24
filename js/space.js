@@ -46,7 +46,7 @@ let spaceStationGroup = new THREE.Object3D();
 scene.add(spaceStationGroup);
 
 for(let i = 0; i < 4; ++i) {
-  let spaceStation = new Sprite('space-station', THREE.Math.randInt(1, 4));
+  let spaceStation = new Sprite('space-station', THREE.Math.randInt(1, 3));
   let scale = THREE.Math.randFloat(2, 3);
   spaceStation.position.set(THREE.Math.randFloat(-4, 4), THREE.Math.randFloat(-4, 4), THREE.Math.randFloat(2, 4));
   spaceStation.scale.set(scale, scale, 1);

@@ -2,10 +2,9 @@ export class ColorPlane extends THREE.PlaneBufferGeometry {
 	constructor(...params) {
 		super(...params);
 
-		let positionAttribute = this.getAttribute('position');
-		this.bufferLength = positionAttribute.length / positionAttribute.itemSize;
+		this.bufferCount = this.getAttribute('position').count;
 
-		let colorBuffer = new Float32Array(3*this.bufferLength);
+		let colorBuffer = new Float32Array(3*this.bufferCount);
 		for(let i = 0, len = colorBuffer.length; i < len; ++i) {
 			colorBuffer[i] = 1;
 		}
@@ -15,7 +14,7 @@ export class ColorPlane extends THREE.PlaneBufferGeometry {
 
 	setColor(color) {
 		let colorAttribute = this.getAttribute('color');
-		for(let i = 0; i < this.bufferLength; ++i) {
+		for(let i = 0; i < this.bufferCount; ++i) {
 			this.setColorAttribute(colorAttribute, i, color);
 		}
 		colorAttribute.needsUpdate = true;

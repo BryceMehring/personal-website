@@ -19,30 +19,32 @@ export class MaterialManager {
 		MaterialManager.cache[params.key] = [];
 		for(let i = 0; i < params.tilesVerticle; ++i) {
 			for(let j = 0; j < params.tilesHorizontal; ++j) {
-
 				let index = i * params.tilesHorizontal + j,
 					offsetX = j / params.tilesHorizontal,
 					offsetY = i / params.tilesVerticle,
 					materialType = THREE.MeshBasicMaterial,
 					textures = {
-						textureMap: THREE.ImageUtils.loadTexture(params.texture)
+						textureMap: MaterialManager.textureLoader.load(params.texture)
 					};
+
+				let materialArgs = {
+					map: textures.textureMap,
+					transparent: true,
+					alphaTest: 0.01,
+					color: params.color || 0xffffffff,
+					vertexColors: THREE.VertexColors
+				};
 
 				if(params.normal) {
 					materialType = THREE.MeshPhongMaterial;
-					textures.normalMap = THREE.ImageUtils.loadTexture(params.normal);
+					textures.normalMap = MaterialManager.textureLoader.load(params.normal);
+
+					materialArgs.specular = params.specular || null;
+					materialArgs.shininess = params.shininess || null;
+					materialArgs.normalMap = textures.normalMap;
 				}
 
-				let material = new materialType( {
-					map: textures.textureMap,
-					normalMap: textures.normalMap || null,
-					transparent: true,
-					alphaTest: 0.01,
-					specular: params.specular || null,
-					shininess: params.shininess || null,
-					color: params.color || 0xffffffff,
-					vertexColors: THREE.VertexColors
-				});
+				let material = new materialType(materialArgs);
 
 				for(let key in textures) {
 					let texture = textures[key];
@@ -62,3 +64,4 @@ export class MaterialManager {
 }
 MaterialManager.cache = {};
 MaterialManager.textureWrapMode = THREE.RepeatWrapping; // TODO: maybe we could do something else with this?
+MaterialManager.textureLoader = new THREE.TextureLoader();
