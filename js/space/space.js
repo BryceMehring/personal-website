@@ -1,7 +1,7 @@
 // TODO: clean this up
-import {Sprite} from '/js/sprite.js';
-import {MaterialManager} from '/js/materialManager.js';
-import {Ship} from '/js/ship.js';
+import {Sprite} from './sprite.js';
+import {MaterialManager} from './materialManager.js';
+import {Ship} from './ship.js';
 
 function getRandomAngle() {
     return THREE.Math.randFloat(0, 2*Math.PI);
