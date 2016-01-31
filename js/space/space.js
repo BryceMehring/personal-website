@@ -88,14 +88,14 @@ function updateIndex(sprite, min, max) {
 	sprite.setIndex(index);
 }
 
-function updateColor(sprite) {
+/*function updateColor(sprite) {
 	let randomVertex = THREE.Math.randInt(0, sprite.geometry.bufferLength);
 	sprite.geometry.setVertexColor(randomVertex, {
 		r: Math.random(),
 		g: Math.random(),
 		b: Math.random()
 	});
-}
+}*/
 
 function onWindowResize() {
 	camera.aspect = window.innerWidth / window.innerHeight;
@@ -108,7 +108,12 @@ function onWheelEvent(event) {
   camera.position.z += deltaY;
 }
 
+function onMouseDown(event) {
+  event.preventDefault();
+}
+
 gameElement.addEventListener('wheel', onWheelEvent, false);
+gameElement.addEventListener('mousedown', onMouseDown, false);
 window.addEventListener( 'resize', onWindowResize, false );
 
 spaceStationGroup.children.forEach(function(station) {
