@@ -1,0 +1,5 @@
+{% assign project = site.data.projectDescriptions[include.project] %}
+
+<a href="{{project.images.image}}">
+	<img class="pure-img" src="{{project.images.thumbnail}}" alt="{{project.images.alt}}">
+</a>
