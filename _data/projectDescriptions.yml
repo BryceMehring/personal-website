@@ -5,7 +5,7 @@ adventure:
   short_description: An interactive spaceship flocking simulator
   images:
     thumbnail: /images/adventure-thumbnail.jpg
-    image: /images/asdventure.jpg
+    image: /images/adventure.jpg
     alt: Adventure Gameplay
 
 spacewrights:
