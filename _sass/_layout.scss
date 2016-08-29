@@ -22,6 +22,14 @@
     z-index: 1;
 }
 
+#ribbon {
+  top: $ribbon-offset;
+  left: $ribbon-offset;
+  &:before {
+    background-color: #222;
+  }
+}
+
 @include media-query($on-palm) {
     #ribbon {
         display: none;
