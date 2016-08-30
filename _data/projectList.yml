@@ -1,5 +1,4 @@
-groups:
-  - projects: [adventure, spacewrights, hexel]
+- projects: [adventure, spacewrights, hexel]
 
-  - title: Projects in collaboration with <a href="http://blog.megaminerai.com/">SIG-Game</a>
-    projects: [plants, droids, mars, reef, galapagos]
+- title: Projects in collaboration with <a href="http://blog.megaminerai.com/">SIG-Game</a>
+  projects: [plants, droids, mars, reef, galapagos]

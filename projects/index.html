@@ -1,11 +1,10 @@
 ---
 layout: page
 title: Game Projects
-order: 1
 ---
 
 <ul class="project-group">
-{% for group in site.data.projectList.groups %}
+{% for group in site.data.projectList %}
   {% if group.title %}
     <li>
       <h2 class="no-border">{{group.title}}</h2>

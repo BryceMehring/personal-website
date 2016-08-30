@@ -1,7 +1,6 @@
 ---
 layout: page
 title: About
-order: 2
 ---
 
 I graduated from Missouri University of S&T in the Fall of 2014 with a BS in computer science.
