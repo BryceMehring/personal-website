@@ -15,5 +15,4 @@ The player is tasked with defending a key point from waves of enemies by placing
 * Music: [Rolemusic](http://freemusicarchive.org/music/Rolemusic/)
 
 ## System Requirements
-* Windows: [Visual Studio 2013 Redistributable x86](http://www.microsoft.com/en-us/download/details.aspx?id=40784)
 * Mac OS X and Linux: x64 support
