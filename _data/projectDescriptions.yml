@@ -9,7 +9,7 @@ wdk:
 
 adventure:
   name: Adventure
-  link: adventure/
+  link: projects/adventure/
   position: Lead Developer
   short_description: An interactive spaceship flocking simulator
   images:
@@ -28,7 +28,7 @@ spacewrights:
 
 hexel:
   name: Hexel
-  link: hexel/
+  link: projects/hexel/
   position: Lead Developer
   short_description: A retro tower defense game
   images:
@@ -37,7 +37,7 @@ hexel:
 
 plants:
   name: MegaMinerAI 14-Plants
-  link: plants/
+  link: projects/plants/
   position: Lead Visualizer Developer
   short_description: Branch out and dominate
   images:
@@ -46,7 +46,7 @@ plants:
 
 droids:
   name: MegaMinerAI 13-Droids
-  link: droids/
+  link: projects/droids/
   position: Lead Visualizer Developer
   short_description: Disassemble and destroy
   images:
@@ -55,7 +55,7 @@ droids:
 
 mars:
   name: MegaMinerAI 12-Mars
-  link: mars/
+  link: projects/mars/
   position: Lead Visualizer Developer
   short_description: The rivers run red
   images:
@@ -64,7 +64,7 @@ mars:
 
 reef:
   name: MegaMinerAI 11-Reef
-  link: reef/
+  link: projects/reef/
   position: Lead Visualizer Developer
   short_description: It's all about garbage collection
   images:
@@ -73,7 +73,7 @@ reef:
 
 galapagos:
   name: MegaMinerAI 10-Galapagos
-  link: galapagos/
+  link: projects/galapagos/
   position: Visualizer Developer
   short_description: Adapt, compete, and evolve to survive
   images:

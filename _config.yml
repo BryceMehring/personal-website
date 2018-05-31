@@ -17,6 +17,7 @@ permalink: pretty
 
 plugins:
   - jekyll-sitemap
+  - jekyll-redirect-from
 
 sass:
     style: :compressed
