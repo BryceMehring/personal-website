@@ -4,6 +4,7 @@
     {% include githubRibbon.html %}
     <a class="site-title" href="{{ site.url }}/">{{ site.title }}</a>
 
+    {% if site.data.navigation.size > 0 %}
     <nav class="site-nav">
       <a href="#" class="menu-icon">
         <svg viewBox="0 0 18 15">
@@ -13,12 +14,12 @@
         </svg>
       </a>
       <div class="trigger">
-      {% assign sorted_pages = site.pages | sort:"order" %}
       {% for page in site.data.navigation %}
          <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
       {% endfor %}
       </div>
     </nav>
+    {% endif %}
 
   </div>
 
