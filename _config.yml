@@ -6,7 +6,7 @@ email: brycemehring@gmail.com
 github_username: BryceMehring
 exclude: [README.md, CNAME, Gemfile]
 
-url: //www.brycemehring.com
+url: https://www.brycemehring.com
 
 # Google Analytics
 google_analytics_id: UA-52920015-1
