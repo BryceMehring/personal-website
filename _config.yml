@@ -1,9 +1,8 @@
 # Site settings
 title: Bryce Mehring
 description: I'm Bryce Mehring and I love developing video games that create meaningful experiences.
-footer_title: <a href="https://www.goldbargames.com/">Goldbar Games</a> Developer
 email: brycemehring@gmail.com
-github_username: BryceMehring
+github_profile: https://github.com/BryceMehring
 exclude: [README.md, CNAME, Gemfile]
 
 url: https://www.brycemehring.com

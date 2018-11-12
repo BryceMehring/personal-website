@@ -1,17 +1,16 @@
 <footer class="site-footer">
-
-  <div class="wrapper">
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col  footer-col-1">
-        <ul class="contact-list">
-          <li>{{ site.title }}</li>
-          <li>{{ site.footer_title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
-    </div>
-
-  </div>
-
+  <ul class="contact-list">
+    <li>
+      <a href="{{site.github_profile}}">
+        <i class="fab fa-github"></i>
+        Github
+      </a>
+    </li>
+    <li>
+      <a href="mailto:{{ site.email }}">
+        <i class="fas fa-envelope"></i>
+        {{ site.email }}
+      </a>
+    </li>
+  </ul>
 </footer>

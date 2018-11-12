@@ -1,7 +1,6 @@
 ---
 layout: compress
 ---
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,14 +8,14 @@ layout: compress
 
   <body>
     {% include header.html %}
-
-    <div class="page-content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+    <div class="container-fluid pt-3 pb-5">
+      {{ content }}
     </div>
 
-    {% include footer.html %}
+    <div class="container">
+      {% include footer.html %}
+    </div>
+
     {% include tracking.html %}
   </body>
 

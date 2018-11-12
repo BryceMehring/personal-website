@@ -3,11 +3,9 @@ title: Adventure - A Space Adventure
 project: adventure
 layout: page
 ---
-<div class="pure-u-1 pure-u-md-1-2">
-	{% include image-thumbnail.html project=page.project %}
-</div>
-{% include button.html text="Download" link="https://github.com/BryceMehring/adventure/releases" %} {% include button.html text="View Source" link="https://github.com/BryceMehring/adventure" %}
 
+{% include image-thumbnail.html project=page.project %}
+{% include button.html text="Download" link="https://github.com/BryceMehring/adventure/releases" %} {% include button.html text="View Source" link="https://github.com/BryceMehring/adventure" %}
 
 ## Description
 
