@@ -7,10 +7,11 @@ body {
   padding: 35px 0;
 }
 
-.projects {
-  .project {
-    width: 600px;
-    background-color: #f4f4f4;
+.project {
+  background-color: #f4f4f4;
+  .thumbnail {
+    max-width: 630px;
+    margin: auto;
   }
 }
 
@@ -20,6 +21,7 @@ body {
 
   li {
     margin-right: 1em;
+    margin-bottom: 0.5em;
     display: inline-block;
   }
 
