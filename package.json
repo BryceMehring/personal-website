@@ -23,6 +23,7 @@
     "sass": "^1.26.3"
   },
   "devDependencies": {
+    "@brycemehring/gh-pages-deploy": "^1.0.0",
     "@types/react": "^16.9.25",
     "@types/react-helmet": "^5.0.15",
     "prettier": "^2.0.2"
@@ -38,7 +39,9 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1"
+    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing\" && exit 1",
+    "predeploy": "npm run build",
+    "deploy": "node deploy.mjs"
   },
   "repository": {
     "type": "git",
