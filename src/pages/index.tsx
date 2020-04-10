@@ -1,7 +1,7 @@
-import React from "react";
+import React from 'react';
 
-import Layout from "../components/layout";
-import Projects from "../components/projects";
+import Layout from '../components/layout';
+import Projects from '../components/projects';
 
 const Index = () => (
   <Layout>

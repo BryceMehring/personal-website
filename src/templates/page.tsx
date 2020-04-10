@@ -1,10 +1,10 @@
-import React from "react";
-import { graphql } from "gatsby";
-import Layout from "../components/layout";
-import Buttons from "../components/buttons";
-import Thumbnail from "../components/thumbnail";
-import Youtube from "../components/youtube";
-import projectDescriptionsYML from "../data/projectDescriptions.yml";
+import React from 'react';
+import { graphql } from 'gatsby';
+import Layout from '../components/layout';
+import Buttons from '../components/buttons';
+import Thumbnail from '../components/thumbnail';
+import Youtube from '../components/youtube';
+import projectDescriptionsYML from '../data/projectDescriptions.yml';
 
 const typedProjectDescriptions: Record<
   string,

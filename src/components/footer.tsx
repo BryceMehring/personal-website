@@ -1,13 +1,13 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { config } from '@fortawesome/fontawesome-svg-core'
+import React from 'react';
+import { useStaticQuery, graphql } from 'gatsby';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { config } from '@fortawesome/fontawesome-svg-core';
 
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
+import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import '@fortawesome/fontawesome-svg-core/styles.css' // Import the CSS
-config.autoAddCss = false // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
+import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
+config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 export default () => {
   const { site } = useStaticQuery(

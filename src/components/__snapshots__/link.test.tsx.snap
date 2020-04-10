@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`link matches snapshot 1`] = `"<a href=\\"test\\">example</a>"`;
+
+exports[`link matches snapshot with / 1`] = `"<a class=\\"mockedLink\\">mock</a>"`;

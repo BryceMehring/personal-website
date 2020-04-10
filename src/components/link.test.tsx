@@ -1,0 +1,22 @@
+import React from 'react';
+import Link from './link';
+import { mount } from 'enzyme';
+import { Link as GatsbyLink } from 'gatsby';
+
+jest.mock('gatsby', () => ({
+  Link: jest.fn(() => <a className="mockedLink">mock</a>),
+}));
+
+describe('link', () => {
+  it('matches snapshot', () => {
+    const wrapper = mount(<Link href="test">example</Link>);
+    expect(wrapper.html()).toMatchSnapshot();
+    expect(GatsbyLink).not.toHaveBeenCalled();
+  });
+
+  it('matches snapshot with /', () => {
+    const wrapper = mount(<Link href="/test">example 2</Link>);
+    expect(wrapper.html()).toMatchSnapshot();
+    expect(GatsbyLink).toHaveBeenCalled();
+  });
+});

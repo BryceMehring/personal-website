@@ -1,5 +1,10 @@
 declare module '*.yml';
 
+declare interface ButtonProps {
+  text: string;
+  link: string;
+}
+
 declare interface ProjectButton {
   text: string;
   link: string;

@@ -1,7 +1,7 @@
-import React from "react";
-import projectDescriptionsYML from "../data/projectDescriptions.yml";
-import projectsYML from "../data/projects.yml";
-import Project from "./project";
+import React from 'react';
+import projectDescriptionsYML from '../data/projectDescriptions.yml';
+import projectsYML from '../data/projects.yml';
+import Project from './project';
 
 const typedProjectList: string[] = projectsYML;
 const typedProjectDescriptions: Record<
