@@ -24,7 +24,7 @@ export default () => {
   );
   const { email, github } = site.siteMetadata;
   return (
-    <footer className="site-footer">
+    <footer className="container site-footer">
       <ul className="contact-list">
         <li>
           <a href={github}>

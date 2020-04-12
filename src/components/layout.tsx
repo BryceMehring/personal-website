@@ -21,15 +21,12 @@ interface Props {
 const Layout = ({ children, title }: Props) => {
   return (
     <>
-      <Header pageTitle={title} />
       <SEO title={title} />
       <div className="container-fluid pt-3 pb-5">
+        <Header pageTitle={title} />
         <main>{children}</main>
       </div>
-
-      <div className="container">
-        <Footer />
-      </div>
+      <Footer />
     </>
   );
 };

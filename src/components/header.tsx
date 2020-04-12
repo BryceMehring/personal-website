@@ -10,7 +10,7 @@ export default ({ pageTitle }: Props) => {
     return null;
   }
   return (
-    <header className="site-header">
+    <header className="container site-header">
       <nav aria-label="breadcrumb">
         <ol className="breadcrumb">
           <li className="breadcrumb-item">
