@@ -1,9 +1,11 @@
 import React from 'react';
 import Link from './link';
 
+import css from './project.module.scss';
+
 export default (project: ProjectProp) => {
   return (
-    <div className="col-sm-12 col-md-4 col-xl-3 p-3 m-3 project border shadow rounded">
+    <div className={`col-sm-12 col-md-4 col-xl-3 p-3 m-3 border shadow rounded ${css.project}`}>
       <div className="text-center">
         <h3>
           <Link href={project.link}>{project.name}</Link>
@@ -13,7 +15,7 @@ export default (project: ProjectProp) => {
           <b>Position</b>: {project.position}
         </p>
       </div>
-      <div className="thumbnail">
+      <div className={css.thumbnail}>
         <Link href={project.link}>
           <img
             className="img-fluid d-block m-auto"

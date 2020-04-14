@@ -6,7 +6,9 @@ import { config } from '@fortawesome/fontawesome-svg-core';
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
-import '@fortawesome/fontawesome-svg-core/styles.css'; // Import the CSS
+import css from './footer.module.scss';
+import '@fortawesome/fontawesome-svg-core/styles.css';
+
 config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
 
 export default () => {
@@ -24,8 +26,8 @@ export default () => {
   );
   const { email, github } = site.siteMetadata;
   return (
-    <footer className="container site-footer">
-      <ul className="contact-list">
+    <footer className={`container ${css.footer}`}>
+      <ul>
         <li>
           <a href={github}>
             <FontAwesomeIcon icon={faGithub} size="1x" />

@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from './link';
-import { mount } from 'enzyme';
+import renderer from 'react-test-renderer';
 import { Link as GatsbyLink } from 'gatsby';
 
 jest.mock('gatsby', () => ({
@@ -9,14 +9,14 @@ jest.mock('gatsby', () => ({
 
 describe('link', () => {
   it('matches snapshot', () => {
-    const wrapper = mount(<Link href="test">example</Link>);
-    expect(wrapper.html()).toMatchSnapshot();
+    const wrapper = renderer.create(<Link href="test">example</Link>);
+    expect(wrapper.toJSON()).toMatchSnapshot();
     expect(GatsbyLink).not.toHaveBeenCalled();
   });
 
   it('matches snapshot with /', () => {
-    const wrapper = mount(<Link href="/test">example 2</Link>);
-    expect(wrapper.html()).toMatchSnapshot();
+    const wrapper = renderer.create(<Link href="/test">example 2</Link>);
+    expect(wrapper.toJSON()).toMatchSnapshot();
     expect(GatsbyLink).toHaveBeenCalled();
   });
 });

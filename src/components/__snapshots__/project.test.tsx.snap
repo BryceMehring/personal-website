@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`project matches snapshot 1`] = `
+<div
+  className="col-sm-12 col-md-4 col-xl-3 p-3 m-3 border shadow rounded project"
+>
+  <div
+    className="text-center"
+  >
+    <h3>
+      <a
+        href="link"
+      >
+        name
+      </a>
+    </h3>
+    <p>
+      short
+    </p>
+    <p>
+      <b>
+        Position
+      </b>
+      : 
+      pos
+    </p>
+  </div>
+  <div
+    className="thumbnail"
+  >
+    <a
+      href="link"
+    >
+      <img
+        alt="alt"
+        className="img-fluid d-block m-auto"
+        src="thumbnail"
+      />
+    </a>
+  </div>
+</div>
+`;

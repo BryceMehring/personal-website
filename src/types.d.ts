@@ -1,4 +1,5 @@
 declare module '*.yml';
+declare module '*.scss';
 
 declare interface ButtonProps {
   text: string;
