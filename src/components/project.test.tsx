@@ -5,7 +5,7 @@ import Project from './project';
 describe('project', () => {
   it('matches snapshot', () => {
     const wrapper = renderer.create(
-      <Project 
+      <Project
         name="name"
         shortDescription="short"
         position="pos"
@@ -18,5 +18,5 @@ describe('project', () => {
     );
 
     expect(wrapper.toJSON()).toMatchSnapshot();
-  })
-})
+  });
+});

@@ -5,7 +5,9 @@ import css from './project.module.scss';
 
 export default (project: ProjectProp) => {
   return (
-    <div className={`col-sm-12 col-md-4 col-xl-3 p-3 m-3 border shadow rounded ${css.project}`}>
+    <div
+      className={`col-sm-12 col-md-4 col-xl-3 p-3 m-3 border shadow rounded ${css.project}`}
+    >
       <div className="text-center">
         <h3>
           <Link href={project.link}>{project.name}</Link>
