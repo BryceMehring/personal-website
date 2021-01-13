@@ -25,19 +25,22 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         // CommonMark mode (default: true)
-        commonmark: false,
+        commonmark: true,
         // Footnotes mode (default: true)
-        footnotes: false,
+        footnotes: true,
         // Pedantic mode (default: true)
-        pedantic: false,
+        pedantic: true,
         // GitHub Flavored Markdown mode (default: true)
         gfm: true,
-        // Plugins configs
-        plugins: [],
       },
     },
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-sass`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        implementation: require("sass"),
+      },
+    },
     `gatsby-plugin-sitemap`,
   ],
 }
