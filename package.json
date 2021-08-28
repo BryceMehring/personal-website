@@ -1,42 +1,37 @@
 {
-  "name": "brycemehring.github.io",
+  "name": "bryce-mehring-personal-website",
   "private": true,
-  "description": "Personal Website",
+  "description": "My Personal Website",
   "version": "0.1.0",
   "author": "Bryce Mehring",
   "dependencies": {
-    "@fortawesome/fontawesome-svg-core": "^1.2.32",
-    "@fortawesome/free-brands-svg-icons": "^5.15.1",
-    "@fortawesome/free-solid-svg-icons": "^5.15.1",
-    "@fortawesome/react-fontawesome": "^0.1.14",
-    "bootstrap": "^4.5.2",
-    "gatsby": "^2.30.1",
-    "gatsby-plugin-react-helmet": "^3.8.0",
-    "gatsby-plugin-sass": "^3.0.0",
-    "gatsby-plugin-sitemap": "^2.10.0",
-    "gatsby-plugin-typescript": "^2.10.0",
-    "gatsby-source-filesystem": "^2.9.0",
-    "gatsby-transformer-remark": "^2.14.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.36",
+    "@fortawesome/free-brands-svg-icons": "^5.15.4",
+    "@fortawesome/free-solid-svg-icons": "^5.15.4",
+    "@fortawesome/react-fontawesome": "^0.1.15",
+    "bootstrap": "^4.6.0",
+    "gatsby": "^2.32.13",
+    "gatsby-plugin-react-helmet": "^3.10.0",
+    "gatsby-plugin-sass": "^3.2.0",
+    "gatsby-plugin-sitemap": "^2.12.0",
+    "gatsby-plugin-typescript": "^2.12.1",
+    "gatsby-source-filesystem": "^2.11.1",
+    "gatsby-transformer-remark": "^2.16.1",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
     "react-helmet": "^6.1.0",
-    "sass": "^1.32.4"
+    "sass": "^1.38.2"
   },
   "devDependencies": {
-    "@brycemehring/gh-pages-deploy": "^1.1.0",
-    "@types/jest": "^26.0.20",
-    "@types/react": "^17.0.0",
-    "@types/react-helmet": "^6.1.0",
-    "@types/react-test-renderer": "^17.0.0",
+    "@types/jest": "^26.0.24",
+    "@types/react": "^17.0.19",
+    "@types/react-helmet": "^6.1.2",
+    "@types/react-test-renderer": "^17.0.1",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^26.5.2",
-    "prettier": "^2.2.1",
-    "react-test-renderer": "^17.0.1"
+    "prettier": "^2.3.2",
+    "react-test-renderer": "^17.0.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
@@ -44,15 +39,10 @@
     "start": "npm run develop",
     "serve": "gatsby serve",
     "clean": "gatsby clean",
-    "test": "jest",
-    "predeploy": "npm t && npm run build",
-    "deploy": "node deploy.mjs"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
-  },
-  "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/BryceMehring/personal-website"
   }
 }
