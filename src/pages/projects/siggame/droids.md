@@ -1,7 +1,15 @@
 ---
+id: droids
 title: MegaMinerAI 13 Droids
-path: /projects/droids
-project: droids
+position: Lead Visualizer Developer
+description: Disassemble and destroy
+image:
+  source: droids.jpg
+  alt: Droids Gameplay
+youtube: https://www.youtube.com/embed/ILXq_D4LnXo
+buttons:
+  - text: View Source
+    link: https://github.com/siggame/MegaMinerAI-13
 ---
 
 ## Objective

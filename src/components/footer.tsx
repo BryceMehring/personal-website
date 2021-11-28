@@ -1,17 +1,7 @@
-import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { config } from '@fortawesome/fontawesome-svg-core';
+import { FontAwesomeIcon, faGithub, faEnvelope } from './icons';
 
-import { faEnvelope } from '@fortawesome/free-solid-svg-icons';
-import { faGithub } from '@fortawesome/free-brands-svg-icons';
-
-import css from './footer.module.scss';
-import '@fortawesome/fontawesome-svg-core/styles.css';
-
-config.autoAddCss = false; // Tell Font Awesome to skip adding the CSS automatically since it's being imported above
-
-export default () => {
+export const Footer = () => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -26,7 +16,7 @@ export default () => {
   );
   const { email, github } = site.siteMetadata;
   return (
-    <footer className={`container ${css.footer}`}>
+    <footer className="container footer">
       <ul>
         <li>
           <a href={github}>

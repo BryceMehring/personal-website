@@ -1,0 +1,19 @@
+{
+  "root": true,
+  "globals": {
+    "__PATH_PREFIX__": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "extends": ["react-app", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["@typescript-eslint", "prettier"],
+  "rules": {
+    "prettier/prettier": [
+      "error"
+    ],
+    "no-shadow": "error",
+    "no-magic-numbers": ["warn", { "ignore": [1] }],
+    "react/jsx-uses-react": "off",
+    "react/react-in-jsx-scope": "off",
+    "import/no-anonymous-default-export": "off"
+  }
+}

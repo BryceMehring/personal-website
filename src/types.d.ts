@@ -11,16 +11,23 @@ declare interface ProjectButton {
   link: string;
 }
 
+declare interface ProjectImage {
+  showOnMain?: boolean;
+  alt: string;
+  source: {
+    childImageSharp: {
+      gatsbyImageData: import('gatsby-plugin-image').IGatsbyImageData;
+    };
+  };
+}
+
 declare interface ProjectProp {
-  name: string;
-  shortDescription: string;
+  id: string;
+  title: string;
+  description: string;
   position: string;
-  link: string;
+  shortTitle?: string;
   youtube?: string;
   buttons?: ProjectButton[];
-  images: {
-    thumbnail: string;
-    image?: string;
-    alt: string;
-  }
+  image: ProjectImage;
 }

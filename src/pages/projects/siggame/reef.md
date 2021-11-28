@@ -1,7 +1,15 @@
 ---
+id: reef
 title: MegaMinerAI 11 Reef
-path: /projects/reef
-project: reef
+position: Lead Visualizer Developer
+description: It's all about garbage collection
+image:
+  source: reef.jpg
+  alt: Reef Gameplay
+youtube: https://www.youtube.com/embed/7xGkdxQZkkc
+buttons:
+  - text: View Source
+    link: https://github.com/siggame/MegaMinerAI-11
 ---
 
 ## Objective

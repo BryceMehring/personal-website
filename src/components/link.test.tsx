@@ -1,10 +1,13 @@
-import React from 'react';
 import Link from './link';
 import renderer from 'react-test-renderer';
 import { Link as GatsbyLink } from 'gatsby';
 
 jest.mock('gatsby', () => ({
-  Link: jest.fn(() => <a className="mockedLink">mock</a>),
+  Link: jest.fn(() => (
+    <a href="somewhere" className="mockedLink">
+      mock
+    </a>
+  )),
 }));
 
 describe('link', () => {

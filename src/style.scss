@@ -13,11 +13,36 @@ h3 {
   margin-bottom: 17.5px;
 }
 
-li > p {
-  margin-bottom: 0; // fixes https://github.com/remarkjs/remark bug
-}
-
 iframe {
   display: block;
   max-width: 100%;
+}
+
+.footer {
+  border-top: 1px solid #d0d0d0;
+  padding: 35px 0;
+  ul {
+    list-style: none;
+    margin-left: 0;
+  
+    li {
+      margin-right: 1em;
+      margin-bottom: 0.5em;
+      display: inline-block;
+    }
+  
+    svg {
+      color: $black;
+      margin-right: 0.15rem;
+    }
+  }
+}
+
+.project {
+  background-color: #f4f4f4;
+  .thumbnail {
+    max-width: 630px;
+    text-align: center;
+    margin: auto;
+  }
 }

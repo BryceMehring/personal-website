@@ -1,7 +1,18 @@
 ---
+id: hexel
 title: Hexel (Pre-alpha)
-path: /projects/hexel
-project: hexel
+shortTitle: Hexel
+position: Lead Developer
+description: A retro tower defense game
+image:
+  source: hexel.jpg
+  alt: Hexel Gameplay
+youtube: https://www.youtube.com/embed/xwFNek4eq-w
+buttons:
+  - text: Download
+    link: https://github.com/BryceMehring/Hexel/releases
+  - text: View Source
+    link: https://github.com/BryceMehring/hexel
 ---
 
 ## Description

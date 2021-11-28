@@ -1,11 +1,9 @@
-import React from 'react';
-
 interface YoutubeProps {
-  project?: ProjectProp;
+  link?: string;
 }
 
-export default (props: YoutubeProps) => {
-  const youtube = props.project?.youtube;
+export default (props: YoutubeProps): JSX.Element | null => {
+  const youtube = props?.link;
 
   if (!youtube) {
     return null;
@@ -16,7 +14,9 @@ export default (props: YoutubeProps) => {
       width="560"
       height="315"
       src={youtube}
+      title="YouTube video player"
       frameBorder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
       allowFullScreen
     />
   );

@@ -1,7 +1,15 @@
 ---
+id: mars
 title: MegaMinerAI 12 Mars
-path: /projects/mars
-project: mars
+position: Visualizer Developer
+description: Adapt, compete, and evolve to survive
+image:
+  source: mars.jpg
+  alt: Mars Gameplay
+youtube: https://www.youtube.com/embed/ErwgfRSyGTA
+buttons:
+  - text: View Source
+    link: https://github.com/siggame/MegaMinerAI-12
 ---
 
 ## Objective

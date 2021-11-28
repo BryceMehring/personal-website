@@ -6,6 +6,7 @@ module.exports = {
     github: `https://github.com/BryceMehring`,
     siteUrl: `https://www.brycemehring.com`,
   },
+  jsxRuntime: 'automatic',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
@@ -15,32 +16,44 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/data`,
+        name: `projects`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        path: `${__dirname}/src/images`,
+        name: `images`,
+      },
+    },
+    `gatsby-plugin-image`,
+    {
+      resolve: `gatsby-plugin-sharp`,
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          quality: 80,
+          webpOptions: {
+            nearLossless: true,
+          },
+        },
+      },
+    },
+    `gatsby-transformer-sharp`, // Needed for dynamic images
+    {
       resolve: `gatsby-plugin-typescript`,
       options: {
         isTSX: true, // defaults to false
         allExtensions: true, // defaults to false
       },
     },
-    {
-      resolve: `gatsby-transformer-remark`,
-      options: {
-        // CommonMark mode (default: true)
-        commonmark: true,
-        // Footnotes mode (default: true)
-        footnotes: true,
-        // Pedantic mode (default: true)
-        pedantic: true,
-        // GitHub Flavored Markdown mode (default: true)
-        gfm: true,
-      },
-    },
+    `gatsby-transformer-remark`,
+    `gatsby-transformer-yaml`,
     `gatsby-plugin-react-helmet`,
-    {
-      resolve: `gatsby-plugin-sass`,
-      options: {
-        implementation: require("sass"),
-      },
-    },
+    `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
   ],
-}
+};

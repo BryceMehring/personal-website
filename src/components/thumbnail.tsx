@@ -1,21 +1,14 @@
-import React from 'react';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
-interface ThumbnailProps {
-  project?: ProjectProp;
-}
-
-export default (props: ThumbnailProps) => {
-  const images = props.project?.images;
-
-  if (!images || !images.image || !images.thumbnail) {
+export default (props: ProjectImage): JSX.Element | null => {
+  if (!props.showOnMain) {
     return null;
   }
 
   return (
-    <p>
-      <a href={images.image}>
-        <img className="img-fluid" src={images.thumbnail} alt={images.alt} />
-      </a>
-    </p>
+    <GatsbyImage
+      image={props.source.childImageSharp.gatsbyImageData}
+      alt={props.alt}
+    />
   );
 };

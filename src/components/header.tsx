@@ -1,11 +1,10 @@
-import React from 'react';
-import Link from './link';
+import { Link } from './link';
 
 interface Props {
   pageTitle?: string;
 }
 
-export default ({ pageTitle }: Props) => {
+export const Header = ({ pageTitle }: Props) => {
   if (!pageTitle) {
     return null;
   }

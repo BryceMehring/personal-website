@@ -1,7 +1,18 @@
 ---
+id: adventure
 title: Adventure - A Space Adventure
-path: /projects/adventure
-project: adventure
+shortTitle: Adventure
+position: Lead Developer
+description: An interactive spaceship flocking simulator
+image:
+  source: adventure.jpg
+  alt: Adventure Gameplay
+  showOnMain: true
+buttons: 
+  - text: Download
+    link: https://github.com/BryceMehring/adventure/releases
+  - text: View Source
+    link: https://github.com/BryceMehring/adventure
 ---
 
 ## Description

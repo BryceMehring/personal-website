@@ -1,12 +1,14 @@
-import React from 'react';
-import Button from './button';
+import { Button } from './button';
 
 interface ButtonsProps {
-  project?: ProjectProp;
+  links?: {
+    text: string;
+    link: string;
+  }[];
 }
 
-export default (props: ButtonsProps) => {
-  const buttons = props.project?.buttons?.map((item: any) => {
+export const Buttons = (props: ButtonsProps): JSX.Element => {
+  const buttons = props.links?.map((item: any) => {
     return <Button text={item.text} link={item.link} key={item.text} />;
   });
 

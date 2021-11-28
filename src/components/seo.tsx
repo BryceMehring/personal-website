@@ -5,7 +5,6 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react';
 import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
@@ -16,7 +15,7 @@ interface Props {
   title?: string;
 }
 
-function SEO({ description, lang, meta, title }: Props) {
+export const SEO = ({ description, lang, meta, title }: Props): JSX.Element => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -78,12 +77,10 @@ function SEO({ description, lang, meta, title }: Props) {
       ].concat(meta)}
     />
   );
-}
+};
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
 };
-
-export default SEO;

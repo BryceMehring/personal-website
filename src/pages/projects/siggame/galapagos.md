@@ -1,7 +1,15 @@
 ---
+id: galapagos
 title: MegaMinerAI 10 Galapagos
-path: /projects/galapagos
-project: galapagos
+position: Visualizer Developer
+description: Adapt, compete, and evolve to survive
+image:
+  source: galapagos.jpg
+  alt: Galapagos Gameplay
+youtube: https://www.youtube.com/embed/r27lbVIEGYI
+buttons:
+  - text: View Source
+    link: https://github.com/siggame/MegaMinerAI-10
 ---
 
 ## Objective

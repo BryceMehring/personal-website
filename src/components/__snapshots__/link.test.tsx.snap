@@ -11,6 +11,7 @@ exports[`link matches snapshot 1`] = `
 exports[`link matches snapshot with / 1`] = `
 <a
   className="mockedLink"
+  href="somewhere"
 >
   mock
 </a>

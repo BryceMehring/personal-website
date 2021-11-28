@@ -1,5 +1,4 @@
-import React from 'react';
-import { Link } from 'gatsby';
+import { Link as GatsbyLink } from 'gatsby';
 
 interface Props {
   href: string;
@@ -7,7 +6,7 @@ interface Props {
   [key: string]: any;
 }
 
-export default (props: Props) => {
+export const Link = (props: Props): JSX.Element => {
   const { href, children, ...other } = props;
   if (!href.startsWith('/')) {
     return (
@@ -17,8 +16,8 @@ export default (props: Props) => {
     );
   }
   return (
-    <Link to={href} {...other}>
+    <GatsbyLink to={href} {...other}>
       {children}
-    </Link>
+    </GatsbyLink>
   );
 };

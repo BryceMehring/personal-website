@@ -1,7 +1,6 @@
-import React from 'react';
-import Link from './link';
+import { Link } from './link';
 
-export default (props: ButtonProps) => {
+export const Button = (props: ButtonProps): JSX.Element => {
   return (
     <Link className="btn btn-primary m-3" href={props.link}>
       {props.text}

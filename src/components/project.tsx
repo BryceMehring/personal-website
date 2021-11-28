@@ -1,28 +1,33 @@
-import React from 'react';
-import Link from './link';
+import { Link } from './link';
+import { GatsbyImage } from 'gatsby-plugin-image';
 
-import css from './project.module.scss';
-
-export default (project: ProjectProp) => {
+export const Project = ({
+  id,
+  image,
+  title,
+  shortTitle,
+  position,
+  description,
+}: ProjectProp): JSX.Element => {
+  const link = `/projects/${id}`;
   return (
-    <div
-      className={`col-sm-12 col-md-4 col-xl-3 p-3 m-3 border shadow rounded ${css.project}`}
-    >
+    <div className="col-sm-12 col-md-4 col-xl-3 p-3 m-3 border shadow rounded project">
       <div className="text-center">
         <h3>
-          <Link href={project.link}>{project.name}</Link>
+          <Link href={link}>{shortTitle || title}</Link>
         </h3>
-        <p>{project.shortDescription}</p>
+        <p>{description}</p>
         <p>
-          <b>Position</b>: {project.position}
+          <b>Position</b>: {position}
         </p>
       </div>
-      <div className={css.thumbnail}>
-        <Link href={project.link}>
-          <img
-            className="img-fluid d-block m-auto"
-            src={project.images.thumbnail}
-            alt={project.images.alt}
+      <div className="thumbnail">
+        <Link href={link}>
+          <GatsbyImage
+            image={image.source.childImageSharp.gatsbyImageData}
+            alt={image.alt}
+            className="image"
+            loading="eager"
           />
         </Link>
       </div>
