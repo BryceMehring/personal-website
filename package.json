@@ -1,7 +1,7 @@
 {
-  "name": "brycemehring.github.io",
+  "name": "bryce-mehring-personal-website",
   "private": true,
-  "description": "Personal Website",
+  "description": "My Personal Website",
   "version": "0.1.0",
   "author": "Bryce Mehring",
   "dependencies": {
@@ -42,10 +42,6 @@
     "react-test-renderer": "^17.0.1",
     "typescript": "^4.5.2"
   },
-  "keywords": [
-    "gatsby"
-  ],
-  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
