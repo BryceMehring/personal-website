@@ -1,4 +1,4 @@
-import Link from './link';
+import { Link } from './link';
 import renderer from 'react-test-renderer';
 import { Link as GatsbyLink } from 'gatsby';
 

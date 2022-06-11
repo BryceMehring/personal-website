@@ -8,7 +8,7 @@ image:
   source: adventure.jpg
   alt: Adventure Gameplay
   showOnMain: true
-buttons: 
+buttons:
   - text: Download
     link: https://github.com/BryceMehring/adventure/releases
   - text: View Source

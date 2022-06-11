@@ -1,5 +1,5 @@
 import renderer from 'react-test-renderer';
-import Project from './project';
+import { Project } from './project';
 
 describe('project', () => {
   it('matches snapshot', () => {

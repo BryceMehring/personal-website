@@ -1,4 +1,4 @@
-import Button from './button';
+import { Button } from './button';
 import renderer from 'react-test-renderer';
 
 describe('button', () => {
