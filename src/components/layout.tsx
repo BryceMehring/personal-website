@@ -3,8 +3,6 @@ import { Header } from './header';
 import { SEO } from './seo';
 import { Footer } from './footer';
 
-import '../style.scss';
-
 interface Props {
   title?: string;
   children: any;

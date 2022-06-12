@@ -9,13 +9,10 @@ import { Helmet } from 'react-helmet';
 import { useStaticQuery, graphql } from 'gatsby';
 
 interface Props {
-  description: string;
-  lang: string;
-  meta: any[];
   title?: string;
 }
 
-export const SEO = ({ description, lang, meta, title }: Props): JSX.Element => {
+export const SEO = ({ title }: Props): JSX.Element => {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -29,58 +26,23 @@ export const SEO = ({ description, lang, meta, title }: Props): JSX.Element => {
     `
   );
 
-  const metaDescription = description || site.siteMetadata.description;
-  const siteTitle = title || site.siteMetadata.title;
+  const metaDescription = site.siteMetadata.description;
+  let siteTitle = site.siteMetadata.title;
+
+  if (title) {
+    siteTitle += ` - ${title}`;
+  }
 
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      link={[
-        {
-          href: `https://fonts.googleapis.com/css?family=Open+Sans:300,400,700`,
-          rel: `stylesheet`,
-          type: `text/css`,
-        },
-      ]}
-      title={siteTitle}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
-    />
+    <Helmet>
+      <html lang="en" />
+      <title>{siteTitle}</title>
+      <meta name="description" content={metaDescription} />
+      <meta name="og:title" content={siteTitle} />
+      <meta name="og:description" content={metaDescription} />
+      <meta name="og:type" content="website" />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:title" content={siteTitle} />
+    </Helmet>
   );
-};
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
 };
