@@ -52,7 +52,6 @@ module.exports = {
     },
     `gatsby-transformer-remark`,
     `gatsby-transformer-yaml`,
-    `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
   ],

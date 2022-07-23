@@ -1,6 +1,7 @@
 import { graphql } from 'gatsby';
 import { Layout } from '../../components/layout';
 import { Buttons } from '../../components/buttons';
+import { SEO } from '../../components/seo';
 import Thumbnail from '../../components/thumbnail';
 import Youtube from '../../components/youtube';
 
@@ -35,11 +36,24 @@ export default function Template(props: any): JSX.Element {
     </Layout>
   );
 }
+
+export const Head = ({ data }: any) => {
+  return (
+    <SEO
+      title={
+        data.markdownRemark.frontmatter.shortTitle ||
+        data.markdownRemark.frontmatter.title
+      }
+    />
+  );
+};
+
 export const pageQuery = graphql`
   query ($id: String!) {
     markdownRemark(id: { eq: $id }) {
       html
       frontmatter {
+        shortTitle
         title
         description
         youtube

@@ -13,7 +13,6 @@
     "bootstrap": "^4.6.1",
     "gatsby": "^4.2.0",
     "gatsby-plugin-image": "^2.2.0",
-    "gatsby-plugin-react-helmet": "^5.2.0",
     "gatsby-plugin-sass": "^5.2.0",
     "gatsby-plugin-sharp": "^4.2.0",
     "gatsby-plugin-sitemap": "^5.2.0",
@@ -24,13 +23,11 @@
     "gatsby-transformer-yaml": "^4.2.0",
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
-    "react-helmet": "^6.1.0",
     "sass": "^1.43.5"
   },
   "devDependencies": {
     "@types/jest": "^28.0.0",
     "@types/react": "^18.0.12",
-    "@types/react-helmet": "^6.1.4",
     "@types/react-test-renderer": "^18.0.0",
     "@typescript-eslint/eslint-plugin": "^5.0.0",
     "@typescript-eslint/parser": "^5.0.0",

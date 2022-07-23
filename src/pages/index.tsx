@@ -1,5 +1,6 @@
 import { Layout } from '../components/layout';
 import { Projects } from '../components/projects';
+import { SEO } from '../components/seo';
 
 const Index = (): JSX.Element => (
   <Layout>
@@ -17,3 +18,5 @@ const Index = (): JSX.Element => (
 );
 
 export default Index;
+
+export const Head = () => <SEO />;
