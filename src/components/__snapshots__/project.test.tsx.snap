@@ -39,7 +39,7 @@ exports[`project matches snapshot 1`] = `
         className="gatsby-image-wrapper gatsby-image-wrapper-constrained image"
         data-gatsby-image-wrapper=""
         style={
-          Object {
+          {
             "backgroundColor": undefined,
             "display": "inline-block",
             "overflow": "hidden",
@@ -50,7 +50,7 @@ exports[`project matches snapshot 1`] = `
       >
         <div
           style={
-            Object {
+            {
               "display": "block",
               "maxWidth": 512,
             }
@@ -62,7 +62,7 @@ exports[`project matches snapshot 1`] = `
             role="presentation"
             src="data:image/svg+xml;charset=utf-8,%3Csvg height='384' width='512' xmlns='http://www.w3.org/2000/svg' version='1.1'%3E%3C/svg%3E"
             style={
-              Object {
+              {
                 "display": "block",
                 "maxWidth": "100%",
                 "position": "static",
@@ -74,7 +74,7 @@ exports[`project matches snapshot 1`] = `
           aria-hidden={true}
           data-placeholder-image=""
           style={
-            Object {
+            {
               "height": "100%",
               "left": 0,
               "position": "absolute",
@@ -99,7 +99,7 @@ exports[`project matches snapshot 1`] = `
             src="/static/e82c1/hexel.jpg"
             srcSet="/static/8710f/hexel.jpg 128w,/static/0ee4a/hexel.jpg 256w,/static/e82c1/hexel.jpg 512w"
             style={
-              Object {
+              {
                 "backgroundColor": undefined,
                 "height": "100%",
                 "left": 0,
@@ -133,7 +133,7 @@ exports[`project matches snapshot 1`] = `
               src="/static/e82c1/hexel.jpg"
               srcSet="/static/8710f/hexel.jpg 128w,/static/0ee4a/hexel.jpg 256w,/static/e82c1/hexel.jpg 512w"
               style={
-                Object {
+                {
                   "backgroundColor": undefined,
                   "height": "100%",
                   "left": 0,
@@ -153,8 +153,8 @@ exports[`project matches snapshot 1`] = `
         </noscript>
         <script
           dangerouslySetInnerHTML={
-            Object {
-              "__html": "const t=\\"undefined\\"!=typeof HTMLImageElement&&\\"loading\\"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll(\\"img[data-main-image]\\");for(let e of t){e.dataset.src&&(e.setAttribute(\\"src\\",e.dataset.src),e.removeAttribute(\\"data-src\\")),e.dataset.srcset&&(e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\"));const t=e.parentNode.querySelectorAll(\\"source[data-srcset]\\");for(let e of t)e.setAttribute(\\"srcset\\",e.dataset.srcset),e.removeAttribute(\\"data-srcset\\");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector(\\"[data-placeholder-image]\\").style.opacity=0)}}",
+            {
+              "__html": "const t="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;if(t){const t=document.querySelectorAll("img[data-main-image]");for(let e of t){e.dataset.src&&(e.setAttribute("src",e.dataset.src),e.removeAttribute("data-src")),e.dataset.srcset&&(e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset"));const t=e.parentNode.querySelectorAll("source[data-srcset]");for(let e of t)e.setAttribute("srcset",e.dataset.srcset),e.removeAttribute("data-srcset");e.complete&&(e.style.opacity=1,e.parentNode.parentNode.querySelector("[data-placeholder-image]").style.opacity=0)}}",
             }
           }
           type="module"
