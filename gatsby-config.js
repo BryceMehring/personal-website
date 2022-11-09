@@ -7,6 +7,7 @@ module.exports = {
     siteUrl: `https://www.brycemehring.com`,
   },
   jsxRuntime: 'automatic',
+  trailingSlash: 'never',
   plugins: [
     {
       resolve: `gatsby-source-filesystem`,
