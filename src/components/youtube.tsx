@@ -10,14 +10,16 @@ export default (props: YoutubeProps): JSX.Element | null => {
   }
 
   return (
-    <iframe
-      width="560"
-      height="315"
-      src={youtube}
-      title="YouTube video player"
-      frameBorder="0"
-      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-      allowFullScreen
-    />
+    <div className="col-5">
+      <div className="ratio ratio-16x9">
+        <iframe
+          src={youtube}
+          title="YouTube video player"
+          frameBorder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        />
+      </div>
+    </div>
   );
 };

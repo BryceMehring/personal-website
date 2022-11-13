@@ -27,9 +27,11 @@ export default function Template(props: any): JSX.Element {
       <div className="container">
         <h1>{frontmatter.title}</h1>
         <article>
-          <Thumbnail {...frontmatter.image} />
-          <Youtube link={frontmatter.youtube} />
-          <Buttons links={frontmatter.buttons} />
+          <div className="row">
+            <Thumbnail {...frontmatter.image} />
+            <Youtube link={frontmatter.youtube} />
+            <Buttons links={frontmatter.buttons} />
+          </div>
           {body}
         </article>
       </div>

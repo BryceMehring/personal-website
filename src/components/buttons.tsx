@@ -12,5 +12,5 @@ export const Buttons = (props: ButtonsProps): JSX.Element => {
     return <Button text={item.text} link={item.link} key={item.text} />;
   });
 
-  return <>{buttons}</>;
+  return <div className="col-12">{buttons}</div>;
 };

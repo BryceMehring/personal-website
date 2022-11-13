@@ -6,9 +6,11 @@ export default (props: ProjectImage): JSX.Element | null => {
   }
 
   return (
-    <GatsbyImage
-      image={props.source.childImageSharp.gatsbyImageData}
-      alt={props.alt}
-    />
+    <div className="col-10">
+      <GatsbyImage
+        image={props.source.childImageSharp.gatsbyImageData}
+        alt={props.alt}
+      />
+    </div>
   );
 };
