@@ -2,10 +2,6 @@
 @import './variables.scss';
 @import '~bootstrap/scss/bootstrap.scss';
 
-body {
-  font-family: "Open SansVariable", sans-serif;
-}
-
 h2 {
   border-bottom: 1px solid #dee2e6;
   margin-bottom: 17.5px;
@@ -35,11 +31,22 @@ h3 {
   }
 }
 
+.jumbotron {
+  background-color: $gray-200;
+  padding: 2rem 1rem;
+  margin-bottom: 2rem;
+}
+
+a {
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 .project {
-  background-color: #f4f4f4;
+  height: max-content;
   .thumbnail {
-    max-width: 630px;
-    text-align: center;
-    margin: auto;
+    max-width: 630px; 
   }
 }

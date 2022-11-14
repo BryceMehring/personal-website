@@ -5,7 +5,7 @@ import { SEO } from '../components/seo';
 const Index = (): JSX.Element => (
   <Layout>
     <div className="container">
-      <div className="jumbotron">
+      <div className="jumbotron rounded">
         <h1 className="display-4 text-center">Bryce Mehring</h1>
         <p className="lead">
           I'm Bryce Mehring and I love developing video games that create

@@ -25,7 +25,7 @@ export default function Template(props: any): JSX.Element {
   return (
     <Layout title={frontmatter.title}>
       <div className="container">
-        <h1>{frontmatter.title}</h1>
+        <h1 className="display-4">{frontmatter.title}</h1>
         <article>
           <div className="row">
             <Thumbnail {...frontmatter.image} />
