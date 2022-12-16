@@ -10,7 +10,7 @@ export default (props: YoutubeProps): JSX.Element | null => {
   }
 
   return (
-    <div className="col-5">
+    <div className="col-md-8 col-sm-12">
       <div className="ratio ratio-16x9">
         <iframe
           src={youtube}
