@@ -2,31 +2,8 @@
 
 exports[`project matches snapshot 1`] = `
 <div
-  className="col-sm-12 col-md-4 col-xl-3 p-3 m-3 border shadow rounded project"
+  className="col-sm-12 col-md-4 col-xl-3 card text-bg-light p-3 m-3 shadow text-center project"
 >
-  <div
-    className="text-center"
-  >
-    <h3>
-      <a
-        href="/projects/test"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        name
-      </a>
-    </h3>
-    <p>
-      short
-    </p>
-    <p>
-      <b>
-        Position
-      </b>
-      : 
-      pos
-    </p>
-  </div>
   <div
     className="thumbnail"
   >
@@ -36,7 +13,7 @@ exports[`project matches snapshot 1`] = `
       onMouseEnter={[Function]}
     >
       <div
-        className="gatsby-image-wrapper gatsby-image-wrapper-constrained image"
+        className="gatsby-image-wrapper gatsby-image-wrapper-constrained"
         data-gatsby-image-wrapper=""
         style={
           {
@@ -161,6 +138,35 @@ exports[`project matches snapshot 1`] = `
         />
       </div>
     </a>
+  </div>
+  <div
+    className="card-body"
+  >
+    <h3
+      className="card-title"
+    >
+      <a
+        href="/projects/test"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        name
+      </a>
+    </h3>
+    <div
+      className="card-text"
+    >
+      <p>
+        short
+      </p>
+      <p>
+        <b>
+          Position
+        </b>
+        : 
+        pos
+      </p>
+    </div>
   </div>
 </div>
 `;
