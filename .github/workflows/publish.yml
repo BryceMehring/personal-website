@@ -19,6 +19,16 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version-file: '.nvmrc'
+          cache: 'npm'
+
+      - uses: actions/cache@v3
+        with:
+          path: |
+            .cache
+            public
+          key: ${{ runner.os }}-${{ github.ref_name }}-${{ github.run_id }}
+          restore-keys: |
+            ${{ runner.os }}-${{ github.ref_name }}
 
       - run: npm cit
       - run: npm run build
