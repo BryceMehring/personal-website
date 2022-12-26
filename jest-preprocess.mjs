@@ -1,3 +1,4 @@
+import { createTransformer } from 'babel-jest';
 const babelOptions = {
   presets: [
     [
@@ -9,4 +10,4 @@ const babelOptions = {
     '@babel/preset-typescript',
   ],
 };
-module.exports = require('babel-jest').default.createTransformer(babelOptions);
+export default createTransformer(babelOptions);

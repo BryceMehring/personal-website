@@ -2,9 +2,9 @@ import { Project } from './project';
 import { useStaticQuery, graphql } from 'gatsby';
 
 export const Projects = (): JSX.Element => {
-  const { allProjectsYaml } = useStaticQuery(graphql`
+  const { allProjectsJson } = useStaticQuery(graphql`
     query {
-      allProjectsYaml {
+      allProjectsJson {
         nodes {
           project {
             id
@@ -29,7 +29,7 @@ export const Projects = (): JSX.Element => {
     }
   `);
 
-  const projects = allProjectsYaml.nodes.map(({ project }: any) => {
+  const projects = allProjectsJson.nodes.map(({ project }: any) => {
     const { id, frontmatter } = project;
     const {
       image,

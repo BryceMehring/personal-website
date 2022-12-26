@@ -1,4 +1,4 @@
-module.exports = {
+export default {
   siteMetadata: {
     title: `Bryce Mehring`,
     description: `Bryce Mehring's personal website`,
@@ -11,21 +11,21 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/pages/projects`,
+        path: `./src/pages/projects`,
         name: `markdown-pages`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/data`,
+        path: `./src/data`,
         name: `projects`,
       },
     },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        path: `${__dirname}/src/images`,
+        path: `./src/images`,
         name: `images`,
       },
     },
@@ -48,7 +48,7 @@ module.exports = {
       },
     },
     `gatsby-transformer-remark`,
-    `gatsby-transformer-yaml`,
+    `gatsby-transformer-json`,
     `gatsby-plugin-sass`,
     `gatsby-plugin-sitemap`,
   ],

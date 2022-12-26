@@ -1,7 +1,7 @@
-exports.createSchemaCustomization = ({ actions }) => {
+export const createSchemaCustomization = ({ actions }) => {
   const { createTypes } = actions;
   const typeDefs = `
-    type ProjectsYaml implements Node {
+    type ProjectsJson implements Node {
       project: MarkdownRemark @link(by: "frontmatter.id")
     }
 
