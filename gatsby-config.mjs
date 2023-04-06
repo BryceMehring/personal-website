@@ -4,7 +4,7 @@ export default {
     description: `Bryce Mehring's personal website`,
     email: `brycemehring@gmail.com`,
     github: `https://github.com/BryceMehring`,
-    siteUrl: `https://www.brycemehring.com`,
+    siteUrl: `https://brycemehring.com`,
   },
   jsxRuntime: 'automatic',
   plugins: [
