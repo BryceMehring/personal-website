@@ -1,18 +1,21 @@
-// Jest Snapshot v1, https://goo.gl/fbAQLP
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
 
-exports[`link matches snapshot 1`] = `
+exports[`link > matches snapshot 1`] = `
 <a
+  data-internal-link={true}
   href="test"
 >
   example
 </a>
 `;
 
-exports[`link matches snapshot with / 1`] = `
+exports[`link > matches snapshot with / 1`] = `
 <a
-  className="mockedLink"
-  href="somewhere"
+  data-external-link={true}
+  href="/test"
+  onClick={[Function]}
+  onMouseEnter={[Function]}
 >
-  mock
+  example 2
 </a>
 `;

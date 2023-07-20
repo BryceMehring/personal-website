@@ -1,5 +1,6 @@
 import { Button } from './button';
 import renderer from 'react-test-renderer';
+import { describe, it, expect } from 'vitest';
 
 describe('button', () => {
   it('matches snapshot', () => {

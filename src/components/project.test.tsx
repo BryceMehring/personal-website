@@ -1,5 +1,6 @@
 import renderer from 'react-test-renderer';
 import { Project } from './project';
+import { describe, it, expect } from 'vitest';
 
 describe('project', () => {
   it('matches snapshot', () => {
