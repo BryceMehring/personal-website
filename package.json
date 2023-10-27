@@ -36,8 +36,13 @@
     "identity-obj-proxy": "^3.0.0",
     "prettier": "^2.5.0",
     "react-test-renderer": "^18.1.0",
-    "typescript": "^4.5.2",
-    "vitest": "^0.33.0"
+    "typescript": "^5.2.2",
+    "vitest": "^0.34.0"
+  },
+  "overrides": {
+    "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
+      "react": "^18.0.0"
+    }
   },
   "scripts": {
     "build": "gatsby build",
