@@ -18,7 +18,7 @@ export const Projects = (): JSX.Element => {
                 alt
                 source {
                   childImageSharp {
-                    gatsbyImageData(width: 512)
+                    gatsbyImageData(width: 512, height: 350)
                   }
                 }
               }
