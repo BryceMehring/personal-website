@@ -37,7 +37,8 @@
     "prettier": "^2.5.0",
     "react-test-renderer": "^18.1.0",
     "typescript": "^5.2.2",
-    "vitest": "^3.0.7"
+    "vitest": "^3.0.7",
+    "wrangler": "^4.6.0"
   },
   "overrides": {
     "react-server-dom-webpack@0.0.0-experimental-c8b778b7f-20220825": {
@@ -52,7 +53,8 @@
     "serve": "gatsby serve",
     "clean": "gatsby clean",
     "test": "vitest",
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "publish": "wrangler pages publish ./public --project-name personal-website --branch $BRANCH"
   },
   "repository": {
     "type": "git",
