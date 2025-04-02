@@ -54,7 +54,7 @@
     "clean": "gatsby clean",
     "test": "vitest",
     "lint": "eslint src",
-    "publish": "wrangler pages publish ./public --project-name personal-website --branch $BRANCH"
+    "publish:pages": "wrangler pages publish ./public --project-name personal-website --branch $BRANCH"
   },
   "repository": {
     "type": "git",
