@@ -1,0 +1,36 @@
+---
+import Buttons from '../../components/buttons.astro';
+import Thumbnail from '../../components/thumbnail.astro';
+import Youtube from '../../components/youtube.astro';
+import BaseLayout from '../../components/layout.astro';
+
+const { frontmatter: {
+  title,
+  description,
+  image,
+  youtube,
+  buttons,
+} } = Astro.props;
+const slotContent = await Astro.slots.render('default');
+const hasContent = slotContent.trim().length > 0;
+---
+
+
+<BaseLayout title={title}>
+  <div class="container">
+    <h1 class="display-4">{title}</h1>
+    <article>
+      <div class="row">
+        <Thumbnail {...image} />
+        <Youtube link={youtube} />
+        <Buttons links={buttons} />
+      </div>
+      {hasContent ? <Fragment set:html={slotContent} /> : (
+        <>
+          <h2>Description</h2>
+          <p>{description}</p>
+        </>
+      )}
+    </article>
+  </div>
+</BaseLayout>

@@ -1,0 +1,60 @@
+---
+import Project from './project.astro';
+import { getCollection } from 'astro:content';
+
+const projects = [
+  {
+    "project": "adventure"
+  },
+  {
+    "project": "spacewrights"
+  },
+  {
+    "project": "hexel"
+  },
+  {
+    "project": "siggame/plants"
+  },
+  {
+    "project": "siggame/droids"
+  },
+  {
+    "project": "siggame/mars"
+  },
+  {
+    "project": "siggame/reef"
+  },
+  {
+    "project": "siggame/galapagos"
+  }
+];
+
+const allProjects = await getCollection('projects');
+const projectMap = new Map(allProjects.map((project) => [project.data.id, project]));
+const mappedProjects = projects.map(({ project }) => {
+  const projectData = projectMap.get(project);
+  if (!projectData) {
+    throw new Error(`Project with id ${project} not found in collection`);
+  }
+  return projectData;
+});
+---
+
+<div class="container-fluid">
+  <div class="row justify-content-center">
+    {
+      mappedProjects.map((project) => {
+        const { title, description, image, position, id } = project.data;
+        return (
+          <Project
+            id={id}
+            title={title}
+            description={description || ''}
+            image={image}
+            position={position}
+          />
+        );
+      })
+    }
+  </div>
+</div>

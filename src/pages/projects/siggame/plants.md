@@ -1,10 +1,11 @@
 ---
-id: plants
+layout: ../index.astro
+id: siggame/plants
 title: MegaMinerAI 14 Plants
 position: Lead Visualizer Developer
 description: Branch out and dominate
 image:
-  source: plants.jpg
+  source: /src/images/plants.jpg
   alt: Plants Gameplay
 youtube: https://www.youtube.com/embed/uhHRXBvu_KQ
 buttons:

@@ -1,0 +1,30 @@
+---
+import Header from '../components/header.astro';
+import Footer from '../components/footer.astro';
+import { ClientRouter } from "astro:transitions";
+import '../styles/style.scss';
+
+const siteTitle = `Bryce Mehring's personal website`;
+
+interface Props {
+	title?: string;
+}
+---
+
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width" />
+		<title>{siteTitle}</title>
+	</head>
+	<body>
+		<div class="container-fluid pt-3 pb-5">
+			<Header pageTitle={Astro.props.title} />
+			<ClientRouter />
+			<main>
+				<slot />
+			</main>
+		</div>
+		<Footer />
+	</body>
+</html>

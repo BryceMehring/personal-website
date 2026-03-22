@@ -1,0 +1,12 @@
+---
+interface ButtonProps {
+  text: string;
+  link: string;
+}
+
+const props = Astro.props as ButtonProps;
+---
+
+<a class="btn btn-primary m-3" href={props.link}>
+  {props.text}
+</a>

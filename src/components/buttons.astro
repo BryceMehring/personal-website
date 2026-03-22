@@ -1,0 +1,23 @@
+---
+import Button from './button.astro';
+
+interface Props {
+  links?: {
+    text: string;
+    link: string;
+  }[];
+}
+
+const { links } = Astro.props as Props;
+---
+
+{
+  links && (
+    <div class="col-12">
+      {links.map((item: any) => {
+        return <Button text={item.text} link={item.link} key={item.text} />;
+      })}
+    </div>
+  )
+}
+

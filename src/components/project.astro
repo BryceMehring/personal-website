@@ -1,0 +1,45 @@
+---
+import { Picture } from 'astro:assets';
+
+interface Props {
+  id: string;
+  image: {
+    source: any;
+    alt: string;
+  };
+  title: string;
+  shortTitle?: string;
+  position: string;
+  description: string;
+}
+
+const { id, image, title, shortTitle, position, description } = Astro.props as Props;
+const link = `/projects/${id}`;
+---
+
+<div class="col-sm-12 col-md-4 col-xl-3 card text-bg-light p-3 m-3 shadow text-center project">
+  <div class="thumbnail">
+    <a href={link}>
+      <Picture
+        src={image.source}
+        alt={image.alt}
+        formats={['webp', 'jpeg']}
+        width={512}
+        height={350}
+        loading="eager"
+      />
+    </a>
+  </div>
+
+  <div class="card-body">
+    <h3 class="card-title">
+      <a href={link}>{shortTitle || title}</a>
+    </h3>
+    <div class="card-text">
+      <p>{description}</p>
+      <p>
+        <b>Position</b>: {position}
+      </p>
+    </div>
+  </div>
+</div>

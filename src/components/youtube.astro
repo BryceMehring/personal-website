@@ -1,0 +1,20 @@
+---
+interface Props {
+  link?: string;
+}
+const props = Astro.props as Props;
+---
+
+{props.link && (
+  <div class="col-md-8 col-sm-12">
+    <div class="ratio ratio-16x9">
+      <iframe
+        src={props.link}
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      />
+    </div>
+  </div>
+)}

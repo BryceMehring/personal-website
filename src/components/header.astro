@@ -1,0 +1,18 @@
+---
+interface Props {
+  pageTitle?: string;
+}
+---
+
+{Astro.props.pageTitle && <header class="container site-header">
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item">
+        <a href="/">Games</a>
+      </li>
+      <li class="breadcrumb-item active" aria-current="page">
+        {Astro.props.pageTitle}
+      </li>
+    </ol>
+  </nav>
+</header>}
