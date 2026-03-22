@@ -19,7 +19,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "publish:pages": "wrangler pages publish ./public --project-name personal-website --branch $BRANCH"
+    "publish:pages": "wrangler pages publish ./dist --project-name personal-website --branch $BRANCH"
   },
   "repository": {
     "type": "git",
