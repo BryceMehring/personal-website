@@ -1,7 +1,7 @@
 ---
 import Header from '@components/header.astro';
 import Footer from '@components/footer.astro';
-import { ClientRouter } from "astro:transitions";
+import { Font } from "astro:assets";
 import '../styles/style.scss';
 
 interface Props {
@@ -16,13 +16,13 @@ const siteDescription = `Bryce Mehring's personal website.`;
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+		<Font cssVariable="--font-open-sans" />
 		<title>{siteTitle}</title>
 		<meta name="description" content={siteDescription} />
 		<meta name="og:title" content={siteTitle} />
 		<meta name="og:description" content={siteDescription} />
 		<meta name="og:type" content="website" />
 		<link rel="sitemap" href="/sitemap-index.xml" />
-		<ClientRouter />
 	</head>
 	<body>
 		<div class="container-fluid pt-3 pb-5">
