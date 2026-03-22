@@ -1,8 +1,13 @@
 @import './variables.scss';
 @import 'bootstrap/scss/bootstrap.scss';
 
+:root {
+  --site-link-color: var(--bs-primary-color);
+  --site-link-hover-color: var(--bs-emphasis-color);
+}
+
 h2 {
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid var(--bs-border-color);
   margin-bottom: 17.5px;
 }
 
@@ -11,7 +16,6 @@ h3 {
 }
 
 .footer {
-  border-top: 1px solid #d0d0d0;
   padding: 35px 0;
   ul {
     list-style: none;
@@ -24,7 +28,7 @@ h3 {
     }
 
     svg {
-      color: $black;
+      fill: currentColor;
       margin-right: 0.15rem;
       flex-shrink: 0;
       font-size: 1.2em;
@@ -34,14 +38,15 @@ h3 {
 }
 
 .jumbotron {
-  background-color: $gray-200;
   padding: 2rem 1rem;
   margin-bottom: 2rem;
 }
 
 a {
+  color: var(--site-link-color);
   text-decoration: none;
   &:hover {
+    color: var(--site-link-hover-color);
     text-decoration: underline;
   }
 }
