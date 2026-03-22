@@ -1,10 +1,11 @@
 ---
-id: galapagos
+layout: ../index.astro
+id: siggame/galapagos
 title: MegaMinerAI 10 Galapagos
 position: Visualizer Developer
 description: Adapt, compete, and evolve to survive
 image:
-  source: galapagos.jpg
+  source: /src/images/galapagos.jpg
   alt: Galapagos Gameplay
 youtube: https://www.youtube.com/embed/r27lbVIEGYI
 buttons:

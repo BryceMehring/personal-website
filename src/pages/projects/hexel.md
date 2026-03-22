@@ -1,11 +1,12 @@
 ---
+layout: ./index.astro
 id: hexel
 title: Hexel (Pre-alpha)
 shortTitle: Hexel
 position: Lead Developer
 description: A retro tower defense game
 image:
-  source: hexel.jpg
+  source: /src/images/hexel.jpg
   alt: Hexel Gameplay
 youtube: https://www.youtube.com/embed/xwFNek4eq-w
 buttons:

@@ -1,4 +1,6 @@
-$font-family-base: "Open SansVariable", sans-serif;
-$breadcrumb-bg: var(--bs-gray-200);
+$font-family-base: var(--font-open-sans);
+$color-mode-type: media-query;
+$breadcrumb-bg: var(--bs-tertiary-bg);
+$breadcrumb-active-color: var(--bs-emphasis-color);
 $breadcrumb-padding-x: 0.5rem;
 $breadcrumb-padding-y: 0.5rem;

@@ -1,0 +1,32 @@
+---
+import Picture from './picture.astro';
+import type { ImageMetadata } from 'astro';
+
+interface Props {
+  source: string;
+  alt: string;
+  showOnMain?: boolean;
+}
+
+const { source, alt, showOnMain } = Astro.props;
+
+const images = import.meta.glob<{ default: ImageMetadata }>(
+  '/src/images/**/*.{jpg,jpeg,png,gif,webp,svg}',
+  { eager: true }
+);
+const image = images[source];
+---
+
+{
+  showOnMain && image && (
+    <div class="col-10">
+      <Picture
+        src={image.default}
+        alt={alt}
+        width={image.default.width}
+        height={image.default.height}
+        class="img-fluid"
+      />
+    </div>
+  )
+}

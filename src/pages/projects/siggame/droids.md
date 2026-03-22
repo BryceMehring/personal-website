@@ -1,10 +1,11 @@
 ---
-id: droids
+layout: ../index.astro
+id: siggame/droids
 title: MegaMinerAI 13 Droids
 position: Lead Visualizer Developer
 description: Disassemble and destroy
 image:
-  source: droids.jpg
+  source: /src/images/droids.jpg
   alt: Droids Gameplay
 youtube: https://www.youtube.com/embed/ILXq_D4LnXo
 buttons:

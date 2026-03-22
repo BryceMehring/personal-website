@@ -1,0 +1,24 @@
+---
+import GithubIcon from '@images/github.svg';
+import EnvelopeIcon from '@images/envelope.svg';
+
+const github = 'https://github.com/BryceMehring';
+const email = 'brycemehring@gmail.com';
+---
+
+<footer class="container footer border-top">
+  <ul>
+    <li>
+      <a href={github}>
+        <GithubIcon />
+        GitHub
+      </a>
+    </li>
+    <li>
+      <a href={`mailto:${email}`}>
+        <EnvelopeIcon />
+        {email}
+      </a>
+    </li>
+  </ul>
+</footer>

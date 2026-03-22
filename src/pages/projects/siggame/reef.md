@@ -1,10 +1,11 @@
 ---
-id: reef
+layout: ../index.astro
+id: siggame/reef
 title: MegaMinerAI 11 Reef
 position: Lead Visualizer Developer
 description: It's all about garbage collection
 image:
-  source: reef.jpg
+  source: /src/images/reef.jpg
   alt: Reef Gameplay
 youtube: https://www.youtube.com/embed/7xGkdxQZkkc
 buttons:

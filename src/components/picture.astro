@@ -1,0 +1,15 @@
+---
+import { Picture as AstroPicture } from 'astro:assets';
+import type { ImageOutputFormat } from 'astro';
+import type { ComponentProps } from 'astro/types';
+
+type Props = ComponentProps<typeof AstroPicture>;
+
+const formats: ImageOutputFormat[] = ['avif', 'jpeg'];
+const pictureProps: Props = {
+  ...Astro.props,
+  formats,
+};
+---
+
+<AstroPicture {...pictureProps} />

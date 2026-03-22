@@ -1,10 +1,11 @@
 ---
-id: mars
+layout: ../index.astro
+id: siggame/mars
 title: MegaMinerAI 12 Mars
 position: Visualizer Developer
 description: Adapt, compete, and evolve to survive
 image:
-  source: mars.jpg
+  source: /src/images/mars.jpg
   alt: Mars Gameplay
 youtube: https://www.youtube.com/embed/ErwgfRSyGTA
 buttons:

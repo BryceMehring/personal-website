@@ -1,11 +1,12 @@
 ---
+layout: ./index.astro
 id: adventure
 title: Adventure - A Space Adventure
 shortTitle: Adventure
 position: Lead Developer
 description: An interactive spaceship flocking simulator
 image:
-  source: adventure.jpg
+  source: /src/images/adventure.jpg
   alt: Adventure Gameplay
   showOnMain: true
 buttons:
