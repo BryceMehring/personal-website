@@ -17,7 +17,9 @@ const { id, image, title, shortTitle, position, description } = Astro.props;
 const link = `/projects/${id}`;
 ---
 
-<div class="col-sm-12 col-md-4 col-xl-3 card bg-body-tertiary text-body border-secondary-subtle p-3 m-3 shadow text-center project">
+<div
+  class="col-sm-12 col-md-4 col-xl-3 card bg-body-tertiary text-body border-secondary-subtle p-3 m-3 shadow text-center project"
+>
   <div class="thumbnail">
     <a href={link}>
       <Picture

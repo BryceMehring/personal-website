@@ -4,33 +4,35 @@ import { getCollection } from 'astro:content';
 
 const projects = [
   {
-    "project": "adventure"
+    project: 'adventure',
   },
   {
-    "project": "spacewrights"
+    project: 'spacewrights',
   },
   {
-    "project": "hexel"
+    project: 'hexel',
   },
   {
-    "project": "siggame/plants"
+    project: 'siggame/plants',
   },
   {
-    "project": "siggame/droids"
+    project: 'siggame/droids',
   },
   {
-    "project": "siggame/mars"
+    project: 'siggame/mars',
   },
   {
-    "project": "siggame/reef"
+    project: 'siggame/reef',
   },
   {
-    "project": "siggame/galapagos"
-  }
+    project: 'siggame/galapagos',
+  },
 ];
 
 const allProjects = await getCollection('projects');
-const projectMap = new Map(allProjects.map((project) => [project.data.id, project]));
+const projectMap = new Map(
+  allProjects.map((project) => [project.data.id, project])
+);
 const mappedProjects = projects.map(({ project }) => {
   const projectData = projectMap.get(project);
   if (!projectData) {
@@ -44,7 +46,8 @@ const mappedProjects = projects.map(({ project }) => {
   <div class="row justify-content-center">
     {
       mappedProjects.map((project) => {
-        const { title, shortTitle, description, image, position, id } = project.data;
+        const { title, shortTitle, description, image, position, id } =
+          project.data;
         return (
           <Project
             id={id}

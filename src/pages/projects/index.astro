@@ -7,15 +7,8 @@ import BaseLayout from '@components/layout.astro';
 const { frontmatter = {} } = Astro.props;
 const slotContent = await Astro.slots.render('default');
 const hasContent = slotContent?.trim().length > 0;
-const {
-  title,
-  description,
-  image,
-  youtube,
-  buttons,
-} = frontmatter;
+const { title, description, image, youtube, buttons } = frontmatter;
 ---
-
 
 <BaseLayout title={title}>
   <div class="container">
@@ -26,12 +19,16 @@ const {
         <Youtube link={youtube} />
         <Buttons links={buttons} />
       </div>
-      {hasContent ? <Fragment set:html={slotContent} /> : (
-        <>
-          <h2>Description</h2>
-          <p>{description}</p>
-        </>
-      )}
+      {
+        hasContent ? (
+          <Fragment set:html={slotContent} />
+        ) : (
+          <>
+            <h2>Description</h2>
+            <p>{description}</p>
+          </>
+        )
+      }
     </article>
   </div>
 </BaseLayout>

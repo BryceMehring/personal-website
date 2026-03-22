@@ -20,7 +20,13 @@ const image = images[source];
 {
   showOnMain && image && (
     <div class="col-10">
-      <Picture src={image.default} alt={alt} width={image.default.width} height={image.default.height} class="img-fluid" />
+      <Picture
+        src={image.default}
+        alt={alt}
+        width={image.default.width}
+        height={image.default.height}
+        class="img-fluid"
+      />
     </div>
   )
 }
