@@ -44,11 +44,12 @@ const mappedProjects = projects.map(({ project }) => {
   <div class="row justify-content-center">
     {
       mappedProjects.map((project) => {
-        const { title, description, image, position, id } = project.data;
+        const { title, shortTitle, description, image, position, id } = project.data;
         return (
           <Project
             id={id}
             title={title}
+            shortTitle={shortTitle}
             description={description || ''}
             image={image}
             position={position}

@@ -1,18 +1,19 @@
 ---
-import Buttons from '../../components/buttons.astro';
-import Thumbnail from '../../components/thumbnail.astro';
-import Youtube from '../../components/youtube.astro';
-import BaseLayout from '../../components/layout.astro';
+import Buttons from '@components/buttons.astro';
+import Thumbnail from '@components/thumbnail.astro';
+import Youtube from '@components/youtube.astro';
+import BaseLayout from '@components/layout.astro';
 
-const { frontmatter: {
+const { frontmatter = {} } = Astro.props;
+const slotContent = await Astro.slots.render('default');
+const hasContent = slotContent?.trim().length > 0;
+const {
   title,
   description,
   image,
   youtube,
   buttons,
-} } = Astro.props;
-const slotContent = await Astro.slots.render('default');
-const hasContent = slotContent.trim().length > 0;
+} = frontmatter;
 ---
 
 

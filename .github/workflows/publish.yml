@@ -22,7 +22,7 @@ jobs:
           node-version-file: '.nvmrc'
           cache: 'npm'
 
-      - run: npm cit
+      - run: npm ci
       - run: npm run build
 
       - name: Publish to Cloudflare Pages

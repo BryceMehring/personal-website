@@ -1,5 +1,5 @@
 ---
-import { Picture } from 'astro:assets';
+import Picture from './picture.astro';
 
 interface Props {
   id: string;
@@ -13,7 +13,7 @@ interface Props {
   description: string;
 }
 
-const { id, image, title, shortTitle, position, description } = Astro.props as Props;
+const { id, image, title, shortTitle, position, description } = Astro.props;
 const link = `/projects/${id}`;
 ---
 
@@ -23,7 +23,6 @@ const link = `/projects/${id}`;
       <Picture
         src={image.source}
         alt={image.alt}
-        formats={['webp', 'jpeg']}
         width={512}
         height={350}
         loading="eager"
