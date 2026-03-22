@@ -14,7 +14,7 @@ const { links } = Astro.props;
 {
   links && (
     <div class="col-12">
-      {links.map((item: any) => {
+      {links.map((item) => {
         return <Button text={item.text} link={item.link} />;
       })}
     </div>
