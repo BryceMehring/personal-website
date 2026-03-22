@@ -6,7 +6,6 @@
   "author": "Bryce Mehring",
   "dependencies": {
     "@astrojs/sitemap": "^3.7.1",
-    "@fontsource/open-sans": "^4.5.10",
     "bootstrap": "^5.2.2"
   },
   "devDependencies": {
