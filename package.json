@@ -8,6 +8,7 @@
     "bootstrap": "^5.2.2"
   },
   "devDependencies": {
+    "@astrojs/check": "^0.9.8",
     "@astrojs/sitemap": "^3.7.1",
     "astro": "^6.0.8",
     "sass-embedded": "^1.98.0",
@@ -16,7 +17,9 @@
   },
   "scripts": {
     "dev": "astro dev",
+    "check": "astro check",
     "build": "astro build",
+    "build:ci": "npm run check && npm run build",
     "preview": "astro preview",
     "astro": "astro",
     "publish:pages": "wrangler pages publish ./dist --project-name personal-website --branch $BRANCH"

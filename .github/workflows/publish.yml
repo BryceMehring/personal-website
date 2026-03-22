@@ -23,7 +23,7 @@ jobs:
           cache: 'npm'
 
       - run: npm ci
-      - run: npm run build
+      - run: npm run build:ci
 
       - name: Publish to Cloudflare Pages
         run: npm run publish:pages
