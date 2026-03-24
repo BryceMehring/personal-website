@@ -5,6 +5,7 @@
   "version": "0.1.0",
   "author": "Bryce Mehring",
   "dependencies": {
+    "@fontsource-variable/open-sans": "^5.2.7",
     "bootstrap": "^5.2.2"
   },
   "devDependencies": {

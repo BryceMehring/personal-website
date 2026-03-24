@@ -1,7 +1,6 @@
 ---
 import Header from '@components/header.astro';
 import Footer from '@components/footer.astro';
-import { Font } from 'astro:assets';
 import '../styles/style.scss';
 
 interface Props {
@@ -20,7 +19,6 @@ const siteDescription = `Bryce Mehring's personal website.`;
       name="viewport"
       content="width=device-width, initial-scale=1, shrink-to-fit=no"
     />
-    <Font cssVariable="--font-open-sans" />
     <title>{siteTitle}</title>
     <meta name="description" content={siteDescription} />
     <meta property="og:title" content={siteTitle} />

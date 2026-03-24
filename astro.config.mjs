@@ -5,14 +5,6 @@ import sitemap from '@astrojs/sitemap';
 // https://astro.build/config
 export default defineConfig({
   site: 'https://brycemehring.com',
-  fonts: [
-    {
-      provider: fontProviders.fontsource(),
-      name: 'Open Sans',
-      cssVariable: '--font-open-sans',
-      weights: [300, 400, 500, 700],
-    },
-  ],
   vite: {
     css: {
       preprocessorOptions: {
