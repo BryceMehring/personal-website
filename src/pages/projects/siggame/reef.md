@@ -1,5 +1,5 @@
 ---
-layout: "@/layouts/project.astro"
+layout: '@/layouts/project.astro'
 id: siggame/reef
 title: MegaMinerAI 11 Reef
 position: Lead Visualizer Developer

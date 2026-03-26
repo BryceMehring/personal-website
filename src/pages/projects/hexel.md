@@ -1,5 +1,5 @@
 ---
-layout: "@/layouts/project.astro"
+layout: '@/layouts/project.astro'
 id: hexel
 title: Hexel (Pre-alpha)
 shortTitle: Hexel

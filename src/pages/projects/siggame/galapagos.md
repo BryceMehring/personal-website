@@ -1,5 +1,5 @@
 ---
-layout: "@/layouts/project.astro"
+layout: '@/layouts/project.astro'
 id: siggame/galapagos
 title: MegaMinerAI 10 Galapagos
 position: Visualizer Developer
