@@ -1,5 +1,5 @@
 ---
-layout: ./index.astro
+layout: "@/layouts/project.astro"
 id: adventure
 title: Adventure - A Space Adventure
 shortTitle: Adventure

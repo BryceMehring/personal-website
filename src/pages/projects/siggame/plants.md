@@ -1,5 +1,5 @@
 ---
-layout: ../index.astro
+layout: "@/layouts/project.astro"
 id: siggame/plants
 title: MegaMinerAI 14 Plants
 position: Lead Visualizer Developer

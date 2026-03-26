@@ -1,5 +1,5 @@
 ---
-layout: ./index.astro
+layout: "@/layouts/project.astro"
 id: spacewrights
 title: Spacewrights
 position: Developer

@@ -1,5 +1,5 @@
 ---
-layout: ../index.astro
+layout: "@/layouts/project.astro"
 id: siggame/mars
 title: MegaMinerAI 12 Mars
 position: Visualizer Developer

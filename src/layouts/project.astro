@@ -7,7 +7,7 @@ import BaseLayout from '@components/layout.astro';
 const { frontmatter = {} } = Astro.props;
 const slotContent = await Astro.slots.render('default');
 const hasContent = slotContent?.trim().length > 0;
-const { title, description, image, youtube, buttons } = frontmatter;
+const { id, title, description, image, youtube, buttons } = frontmatter;
 ---
 
 <BaseLayout title={title}>
@@ -15,7 +15,7 @@ const { title, description, image, youtube, buttons } = frontmatter;
     <h1 class="display-4">{title}</h1>
     <article>
       <div class="row">
-        <Thumbnail {...image} />
+        <Thumbnail id={id} showOnMain={image?.showOnMain} />
         <Youtube link={youtube} />
         <Buttons links={buttons} />
       </div>

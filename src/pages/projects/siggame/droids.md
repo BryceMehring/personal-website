@@ -1,5 +1,5 @@
 ---
-layout: ../index.astro
+layout: "@/layouts/project.astro"
 id: siggame/droids
 title: MegaMinerAI 13 Droids
 position: Lead Visualizer Developer
