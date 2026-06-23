@@ -25,7 +25,7 @@
     "dev": "astro dev",
     "check": "astro check",
     "build": "astro build",
-    "build:ci": "npm run format:check && npm run check && npm run build",
+    "build:ci": "pn format:check && pn check && pn build",
     "preview": "astro preview",
     "astro": "astro",
     "publish:pages": "wrangler pages publish ./dist --project-name bryce-mehring-personal-website --branch $BRANCH"
